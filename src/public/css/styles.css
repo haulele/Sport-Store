@@ -114,6 +114,7 @@ body{
 
 .nav-item{
     width: 95px;
+    font-weight: bold;
 }
 
 .nav-item:hover{
@@ -130,4 +131,41 @@ body{
     border: 2px solid #415EC6;
     /* transform: rotate(0.61deg); */
     margin: 0rem;
+}
+
+.d-flex, .form-control{
+    width: 260px;
+    margin-left: 35px;
+}
+
+.form-control {
+    background-color: #D9D9D9;
+    border-radius: 15px;
+}
+
+:placeholder-shown{
+    font-style: italic;
+    font-size: 15px;
+}
+
+.ti-search{
+
+}
+
+.cart{
+    position: absolute;
+    left: 89.79%;
+    right: 4.72%;
+    top: 40%;
+    bottom: 0%;
+}
+
+.bi-bag-fill{
+    font-size: 37px;
+    margin-left: 14px;
+}
+
+.bag{
+    font-size: 16px;
+    
 }
