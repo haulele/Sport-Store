@@ -112,3 +112,22 @@ body{
     color: #415EC6;
 }
 
+.nav-item{
+    width: 95px;
+}
+
+.nav-item:hover{
+    color: gray;
+    cursor: pointer;
+}
+
+.hr-navbar{
+    position: absolute;
+    width: 70.01px;
+    height: 0px;
+    left: 18px;
+
+    border: 2px solid #415EC6;
+    /* transform: rotate(0.61deg); */
+    margin: 0rem;
+}
