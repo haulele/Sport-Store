@@ -10,6 +10,19 @@ body{
     width: 100%;
 }
 
+.col-third{
+    width: 33.33333333333%;
+    float: left;
+}
+.column {
+    padding: 0 15px;
+    margin-top: 75px;
+}
+
+.clear{
+    clear: both;
+}
+
 .main-screen{
     position: relative;
     width: 1440px;
@@ -19,7 +32,7 @@ body{
 
 .header{
     position: absolute;
-    width: 1324px;
+    width: 1322px;
     height: 162px;
     left: 0px;
     top: 0px;
@@ -113,7 +126,7 @@ body{
 }
 
 .nav-item{
-    width: 95px;
+    width: 118px;
     font-weight: bold;
 }
 
@@ -134,8 +147,8 @@ body{
 }
 
 .d-flex, .form-control{
-    width: 260px;
-    margin-left: 35px;
+    width: 245px;
+    margin-left: 10px;
 }
 
 .form-control {
@@ -167,5 +180,102 @@ body{
 
 .bag{
     font-size: 16px;
-    
+}
+
+.slider{
+    position: absolute;
+    width: 1324px;
+    height: 475.68px;
+    left: 0px;
+    top: 187px;
+    background: url(/src/public/img/slider.png);
+}
+
+/* CONTENT */
+.main-content{
+
+}
+
+.content-new-product{
+    position: absolute;
+    width: 1179px;
+    height: 1155px;
+    left: 134px;
+    top: 695px;
+}
+
+.new-product{
+    position: absolute;
+    width: 310px;
+    height: 43px;
+    left: 410px;
+    margin-bottom: 15px;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 47px;
+    display: flex;
+    align-items: center;
+    color: #000000;
+}
+
+.content-selling-product{
+    position: absolute;
+    width: 1177px;
+    height: 563px;
+    left: 136px;
+    top: 1287px;
+}
+
+.selling-product{
+    position: absolute;
+    width: 444px;
+    height: 43px;
+    left: 350px;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 47px;
+    display: flex;
+    align-items: center;
+
+    color: #000000;
+}
+
+.product-info{
+    position: absolute;
+    height: 28px;
+    width: 295px;
+    margin-top: 35px;
+
+    font-weight: bold;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-size: 25px;
+    line-height: 35px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #000000;
+}
+
+.product-price{
+    position: absolute;
+    width: 215px;
+    height: 26px;
+    margin-top: 85px;
+    padding-left: 84px;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 25px;
+    line-height: 35px;
+    align-items: center;
+    text-align: center;
+    color: #415EC6;
 }
