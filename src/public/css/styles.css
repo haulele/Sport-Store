@@ -4,21 +4,7 @@
     box-sizing: border-box;
 }
 
-body{
-    display: flex;
-    justify-content: center;
-    width: 100%;
-}
 
-.col-third{
-    width: 33.33333333333%;
-    float: left;
-}
-
-.col-half{
-    width: 50%;
-    float: left;
-}
 
 .column {
     padding: 0 15px;
@@ -29,110 +15,38 @@ body{
     clear: both;
 }
 
-.main-screen{
-    position: relative;
-    width: 1440px;
-    height: 2953px;
-    background: #FFFFFF;
-}
-
-.header{
-    position: absolute;
-    width: 1322px;
-    height: 162px;
-    left: 0px;
-    top: 0px;
-}
-
 .Info-signup-signin{
-    position: absolute;
-    left: 0%;
-    right: 0%;
-    top: 0%;
-    bottom: 67.48%;
     background: #6D87E3;
 }
 
 .header-email, .header-hotline{
-    position: absolute;
-    left: 6.74%;
-    right: 75.42%;
-    top: 43%;
-    bottom: 67.28%;
-
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 500;
     font-size: 20px;
-    line-height: 23px;
-    display: flex;
-    align-items: center;
-    text-align: center;
-
     color: #FEF6ED;
 }
 
-.header-hotline{
-    position: absolute;
-    left: 23.74%;
-    right: 61.42%;
-    top: 43%;
-    bottom: 67.28%;
-}
 
 .sign-in, .logn-in{
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 500;
     font-size: 21px;
-    line-height: 25px;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    top: 45%;
     color: #FFFFFF;
     text-decoration: none;
 }
 
-.sign-in:hover, .logn-in:hover{
-    text-decoration: none;
-}
-
-.sign-in{
-    position: absolute;
-    left: 76.46%;
-    right: 15.56%;
-    bottom: 67.48%;
-}
-
-.logn-in{
-    position: absolute;
-    left: 86.11%;
-    right: 6.53%;
-    bottom: 67.28%;
-}
-
 /* BEGIN NAV */
 .logo{
-    position: absolute;
-    left: 2.29%;
-    right: 75.21%;
-    top: 56.17%;
-    bottom: 9.88%;
-
     font-family: 'Work Sans';
     font-style: normal;
     font-weight: 800;
     font-size: 47px;
-    line-height: 55px;
-    display: flex;
-    align-items: center;
-
     color: #415EC6;
 }
 
 .nav-item{
-    width: 118px;
     font-weight: bold;
 }
 
@@ -142,14 +56,7 @@ body{
 }
 
 .hr-navbar{
-    position: absolute;
-    width: 70.01px;
-    height: 0px;
-    left: 18px;
-
     border: 2px solid #415EC6;
-    /* transform: rotate(0.61deg); */
-    margin: 0rem;
 }
 
 .d-flex, .form-control{
@@ -172,16 +79,10 @@ body{
 }
 
 .cart{
-    position: absolute;
-    left: 89.79%;
-    right: 4.72%;
-    top: 40%;
-    bottom: 0%;
 }
 
 .bi-bag-fill{
     font-size: 37px;
-    margin-left: 14px;
 }
 
 .bag{
@@ -189,11 +90,6 @@ body{
 }
 
 .slider{
-    position: absolute;
-    width: 1324px;
-    height: 475.68px;
-    left: 0px;
-    top: 187px;
     background: url(/src/public/img/slider.png);
 }
 
