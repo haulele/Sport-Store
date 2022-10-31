@@ -1,0 +1,29 @@
+.caption{
+    margin-top: 30px;
+    padding: 30px;
+    text-align: center;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    font-family: 'Roboto';
+}
+.ftco-section {
+	padding: 50px;
+}
+.hr-about{
+    border: 4px solid #415EC6;
+    border-bottom: none;
+    border-right: none;
+    border-left: none;
+}
+.icon-content{
+    color: #415EC6;
+    margin-left: 30px;
+    padding-top: 10px;
+    
+}
+.icon-img{
+    margin-left: 100px;
+}
+p{
+    text-align: justify;
+}
