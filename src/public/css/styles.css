@@ -42,9 +42,26 @@
     font-family: 'Work Sans';
     font-style: normal;
     font-weight: 800;
-    font-size: 47px;
+    font-size: 40px;
     color: #415EC6;
 }
+.cart{
+    padding-top: 15px;
+}
+  
+  @media (max-width: 576px) {
+    .logo {
+      font-size: 35px;
+    }
+    .cart {
+        text-align: center;
+    }
+  }
+  @media (min-width: 992px) {
+    .logo {
+        font-size: 47px;
+    }
+  }
 
 .nav-item{
     font-weight: bold;
@@ -72,13 +89,6 @@
 :placeholder-shown{
     font-style: italic;
     font-size: 15px;
-}
-
-.ti-search{
-
-}
-
-.cart{
 }
 
 .bi-bag-fill{
