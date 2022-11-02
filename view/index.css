@@ -1,0 +1,14 @@
+.shop-brand{
+    font-size: 30px;
+}
+
+@media (min-width: 992px) {
+    .shop-brand{
+        font-size: 40px; 
+    }
+}
+@media (max-width: 576px) {
+    .shop-brand{
+        font-size: 24px;
+    }
+}
