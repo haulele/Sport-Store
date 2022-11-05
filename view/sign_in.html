@@ -18,7 +18,7 @@
             <div class="container">
                 <div class="row">
                     <img class="col-md-2 col-lg-5 p-md-3 d-flex sign-in-img" src="./src/public/img/Modal.png">
-                    <form class="col-md-2 col-lg-5 p-md-4 ms-5 d-flex needs-validation" novalidate>
+                    <form class="col-md-2 col-lg-5 p-md-4 ms-5 d-flex ">
                         <div class="container"> 
                             <div class="row">
                             <h1 class="text-center logo-name">BANASPORTS</h1>
@@ -26,27 +26,28 @@
                                     <div class="signin-form "> 
                                         <!-- name -->
                                         <div class="form-floating mb-3">
-                                            <input type="name" class="form-control" id="floatingInput" placeholder="name">
-                                            <label for="floatingInput"> <i class="person ps-2"></i> Tên</label>
-                                            <div class="valid-feedback"></div>
+                                            <input type="text" class="form-control" id="floatingInput" placeholder="name" required>
+                                            <label for="floatingInput" class="form-lable"> <i class="person ps-2"></i> Tên</label>
+                                            <!-- <div class="invalid-feedback"></div> -->
                                             
                                         </div>
                                         <!-- email -->
                                         <div class="form-floating mb-3">
-                                            <input type="email" class="form-control" id="floatingEmail" placeholder="name@example.com">
-                                            <label for="floatingInput">@ Email</label>
-                                            <div class="invalid-feedback"></div>
+                                            <input type="text" class="form-control" id="floatingInput" placeholder="name@example.com" required>
+                                            <label for="floatingInput" class="form-lable">@ Email</label>
+                                            <!-- <div class="invalid-feedback"></div> -->
                                         </div>
                                         <!-- password -->
                                         <div class="form-floating mb-3">
-                                            <input type="password" class="form-control" id="floatingPassword" placeholder="Password"  required="true" aria-label="password" aria-describedby="basic-addon1">
+                                            <input type="password" class="form-control" id="floatingPassword" placeholder="Password"  required="true" aria-label="password" aria-describedby="basic-addon1" >
                                             <div class="input-group-append">
                                                 <span onclick="password_show_hide();">
                                                 <i class="bi bi-eye-slash-fill" id="show_eye"></i>
                                                 <i class="bi bi-eye-fill d-none" id="hide_eye"></i>
                                                 </span>
                                             </div>
-                                            <label for="floatingPassword">|** Mật khẩu</label>
+                                            <label for="floatingPassword" class="form-lable">|** Mật khẩu</label>
+                                            <!-- <div class="invalid-feedback"></div> -->
                                         </div>
                                         <div class="form-floating">
                                             <input type="password" class="form-control" id="floatingPassword" placeholder="Password" required="true" aria-label="password" aria-describedby="basic-addon1">
@@ -56,16 +57,19 @@
                                                 <i class="bi bi-eye-fill d-none" id="hide_eye"></i>
                                                 </span>
                                             </div>
-                                            <label for="floatingPassword">|** Xác nhận lại mật khẩu</label>
+                                            <label for="floatingPassword" class="form-lable">|** Xác nhận lại mật khẩu</label>
+                                            <!-- <div class="invalid-feedback"></div> -->
                                         </div> 
                                         <br> 
-                                            <a class="btn float-end mb-2 fw-bold" href="" style="background-color: #52C673; color:white;"> <i class="bi bi-box-arrow-in-left"></i> Đăng ký</a>  
+                                            <a class="btn float-end mb-2 fw-bold" type="submit" href="#" style="background-color: #52C673; color:white;"> 
+                                                <i class="bi bi-box-arrow-in-left"></i> Đăng ký
+                                            </a>  
                                         <br> 
                                         <br>
                                             <P class="float-end text-black">
                                                 <small>Đã có tài khoản? Đăng nhập </small><a href="" style="color: red;"><small>tại đây</small></a> 
                                             </P>
-                                         
+                                        
                                         <br> 
                                         <br> 
                                     </div> 
