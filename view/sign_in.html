@@ -17,59 +17,62 @@
         <section class="ftco-section">
             <div class="container">
                 <div class="row">
-                    <img class="col-md-2 col-lg-5 p-md-3 d-flex sign-in-img" src="./src/public/img/Modal.png">
-                    <form class="col-md-2 col-lg-5 p-md-4 ms-5 d-flex ">
+                    <img class="col-md-5 col-lg-5 p-md-3 sign-in-img" src="./src/public/img/Modal.png">
+                    <form class="col-ms-8 col-md-6 col-lg-6 p-md-4 ms-5 my-4 shadow" style="background-color: #F5F5F5; border-radius: 30px;">
                         <div class="container"> 
                             <div class="row">
-                            <h1 class="text-center logo-name">BANASPORTS</h1>
+                            <h1 class="text-center my-5 logo-name">BANASPORTS</h1>
                                 <div class="col-md-12 col-md-offset-4">  
                                     <div class="signin-form "> 
                                         <!-- name -->
-                                        <div class="form-floating mb-3">
-                                            <input type="text" class="form-control" id="floatingInput" placeholder="name" required>
-                                            <label for="floatingInput" class="form-lable"> <i class="person ps-2"></i> Tên</label>
-                                            <!-- <div class="invalid-feedback"></div> -->
-                                            
+                                        <div class="form-group row">
+                                            <div class=" col-11 form-floating mb-3">
+                                                <input type="text" class="form-control" id="floatingInput" placeholder="name" required>
+                                                <label for="floatingInput" class="form-lable"> <i class="person ps-2"></i> Tên</label>
+                                                <!-- <div class="invalid-feedback"></div> -->
+                                                
+                                            </div>
                                         </div>
                                         <!-- email -->
-                                        <div class="form-floating mb-3">
-                                            <input type="text" class="form-control" id="floatingInput" placeholder="name@example.com" required>
-                                            <label for="floatingInput" class="form-lable">@ Email</label>
-                                            <!-- <div class="invalid-feedback"></div> -->
+                                        <div class="form-group row">
+                                            <div class="col-11 form-floating mb-3">
+                                                <input type="text" class="form-control" id="floatingInput" placeholder="name@example.com" required>
+                                                <label for="floatingInput" class="form-lable">@ Email</label>
+                                                <!-- <div class="invalid-feedback"></div> -->
+                                            </div>
                                         </div>
                                         <!-- password -->
-                                        <div class="form-floating mb-3">
-                                            <input type="password" class="form-control" id="floatingPassword" placeholder="Password"  required="true" aria-label="password" aria-describedby="basic-addon1" >
-                                            <div class="input-group-append">
-                                                <span onclick="password_show_hide();">
-                                                <i class="bi bi-eye-slash-fill" id="show_eye"></i>
-                                                <i class="bi bi-eye-fill d-none" id="hide_eye"></i>
-                                                </span>
+                                        <div class="form-group row">
+                                            <div class="col-11 form-floating mb-3">
+                                                <input type="password" class="form-control col-4" id="floatingPassword" placeholder="Password"  required="true" aria-label="password" aria-describedby="basic-addon1" >
+                                                <label for="floatingPassword" class="form-lable"> |** Mật khẩu</label>
                                             </div>
-                                            <label for="floatingPassword" class="form-lable">Mật khẩu</label>
+                                            <span class="col-1 align-self-center" onclick="password_show_hide();">
+                                            <i class="bi bi-eye-slash-fill" id="show_eye"></i>
+                                            <i class="bi bi-eye-fill d-none" id="hide_eye"></i>
+                                            </span>
                                             <!-- <div class="invalid-feedback"></div> -->
                                         </div>
-                                        <div class="form-floating">
-                                            <input type="password" class="form-control" id="floatingPassword" placeholder="Password" required="true" aria-label="password" aria-describedby="basic-addon1">
-                                            <div class="input-group-append">
-                                                <span onclick="password_show_hide();">
-                                                <i class="bi bi-eye-slash-fill" id="show_eye"></i>
-                                                <i class="bi bi-eye-fill d-none" id="hide_eye"></i>
-                                                </span>
+                                        <div class="form-group row">
+                                            <div class="col-11 form-floating">
+                                                <input type="password" class="form-control col-4" id="floatingPassword" placeholder="Password" required="true" aria-label="password" aria-describedby="basic-addon">
+                                                <label for="floatingPassword" class="form-lable"> |** Xác nhận lại mật khẩu</label>
                                             </div>
-                                            <label for="floatingPassword" class="form-lable">Xác nhận lại mật khẩu</label>
+                                            <span class="col-1 align-self-center" onclick="Password_show_hide();">
+                                            <i class="bi bi-eye-slash-fill" id="show_eye"></i>
+                                            <i class="bi bi-eye-fill d-none" id="hide_eye"></i>
+                                            </span>
                                             <!-- <div class="invalid-feedback"></div> -->
-                                        </div> 
+                                        </div>
                                         <br> 
-                                            <a class="btn float-end mb-2 fw-bold" type="submit" href="#" style="background-color: #52C673; color:white;"> 
+                                            <a class="btn float-end mb-2 me-5 fw-bold" type="submit" href="#" style="background-color: #52C673; color:white;"> 
                                                 <i class="bi bi-box-arrow-in-left"></i> Đăng ký
                                             </a>  
                                         <br> 
                                         <br>
-                                            <P class="float-end text-black">
+                                            <P class="me-5 float-end text-black">
                                                 <small>Đã có tài khoản? Đăng nhập </small><a href="" style="color: red;"><small>tại đây</small></a> 
                                             </P>
-                                        
                                         <br> 
                                         <br> 
                                     </div> 
