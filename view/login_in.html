@@ -4,8 +4,8 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>BANASPORTS - Sign in</title>
-        <link rel="stylesheet" href="./src/public/css/sign_in.css">
+        <title>BANASPORTS - Login in</title>
+        <link rel="stylesheet" href="./src/public/css/login_in.css">
         <link rel="stylesheet" href="./src/public/font/themify-icons-font/themify-icons/themify-icons.css">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
@@ -23,16 +23,7 @@
                             <div class="row">
                             <h1 class="text-center my-5 logo-name">BANASPORTS</h1>
                                 <div class="col-md-12 col-md-offset-4">  
-                                    <div class="signin-form "> 
-                                        <!-- name -->
-                                        <div class="form-group row">
-                                            <div class=" col-11 form-floating mb-3">
-                                                <input type="text" class="form-control" id="floatingInput" placeholder="name" required>
-                                                <label for="floatingInput" class="form-lable"> <i class="person ps-2"></i> Tên</label>
-                                                <!-- <div class="invalid-feedback"></div> -->
-                                                
-                                            </div>
-                                        </div>
+                                    <div class="signin-form ">
                                         <!-- email -->
                                         <div class="form-group row">
                                             <div class="col-11 form-floating mb-3">
@@ -43,7 +34,7 @@
                                         </div>
                                         <!-- password -->
                                         <div class="form-group row">
-                                            <div class="col-11 form-floating mb-3">
+                                            <div class="col-11 form-floating">
                                                 <input type="password" class="form-control col-4" id="floatingPassword" placeholder="Password"  required="true" aria-label="password" aria-describedby="basic-addon1" >
                                                 <label for="floatingPassword" class="form-lable"> |** Mật khẩu</label>
                                             </div>
@@ -53,26 +44,13 @@
                                             </span>
                                             <!-- <div class="invalid-feedback"></div> -->
                                         </div>
-                                        <div class="form-group row">
-                                            <div class="col-11 form-floating">
-                                                <input type="password" class="form-control col-4" id="floatingPassword" placeholder="Password" required="true" aria-label="password" aria-describedby="basic-addon">
-                                                <label for="floatingPassword" class="form-lable"> |** Xác nhận lại mật khẩu</label>
-                                            </div>
-                                            <span class="col-1 align-self-center" onclick="Password_show_hide();">
-                                            <i class="bi bi-eye-slash-fill" id="show_eye"></i>
-                                            <i class="bi bi-eye-fill d-none" id="hide_eye"></i>
-                                            </span>
-                                            <!-- <div class="invalid-feedback"></div> -->
-                                        </div>
-                                        <br> 
-                                            <a class="btn float-end mb-2 me-5 fw-bold" type="submit" href="#" style="background-color: #52C673; color:white;"> 
-                                                <i class="bi bi-box-arrow-in-left"></i> Đăng ký
-                                            </a>  
-                                        <br> 
                                         <br>
-                                            <P class="me-5 float-end text-black">
-                                                <small>Đã có tài khoản? Đăng nhập </small><a href="" style="color: red;"><small>tại đây</small></a> 
+                                            <P class="ms-2">
+                                                <a class="text-black fst-italic fs-6" href="#">Quên mật khẩu? </a>
                                             </P>
+                                            <a class="btn float-end mb-2 me-5 fw-bold" type="submit" href="#" style="background-color: #52C673; color:white;"> 
+                                                <i class="bi bi-person-circle"></i> Đăng nhập
+                                            </a>  
                                         <br> 
                                         <br> 
                                     </div> 
