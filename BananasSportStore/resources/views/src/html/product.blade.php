@@ -5,14 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BANASPORTS</title>
-        <link rel="stylesheet" href="./view/src/css/product.css">
-        <link rel="stylesheet" href="./view/src/public/font/themify-icons-font/themify-icons/themify-icons.css">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link href="{{ url('css/product.css') }}" type="text/css" rel="stylesheet"> 
+    <link rel="stylesheet" href="{{ url('font/themify-icons-font/themify-icons/themify-icons.css') }}">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
 </head>
 <body >
-    <div class="site-blocks-cover" style="background-image: url(./view/src/public/img/Rectangle15.png);">
+    <div class="site-blocks-cover" style="background-image: url('img/Rectangle15.png');">
         <div class="container">
             <div class="site-img">
                     <div class="caption">
@@ -88,7 +88,7 @@
                     </div>
                     <div class="col-sm-6 col-md-4 col-lg-3   py-3 ">
                         <div class="product" style="background-color: #E8EBF4; border-radius: 30px; height: 460px;">
-                            <a href="#" class="img-prod"><img class="img-fluid mx-auto p-3 d-block"  src="./view/src/public/img/Rectangle13.png" alt="Colorlib Template">
+                            <a href="#" class="img-prod"><img class="img-fluid mx-auto p-3 d-block"  src="{{ url('img/Rectangle13.png')}}" alt="Colorlib Template">
                             </a>
                             <div class="text py-3 px-3">
                                 <h3><a href="#" class="card-name">Áo Khoác Thể thao Nam PUMA</a></h3>
@@ -100,7 +100,7 @@
                     </div>
                     <div class="col-sm-6 col-md-4 col-lg-3 p-3">
                         <div class="product" style="background-color: #E8EBF4; border-radius: 30px; height: 460px;">
-                            <a href="#" class="img-prod"><img class="img-fluid mx-auto p-3 d-block " src="./view/src/public/img/Rectangle13(1).png" alt="Colorlib Template">
+                            <a href="#" class="img-prod"><img class="img-fluid mx-auto p-3 d-block " src="{{ url('img/Rectangle13(1).png')}}" alt="Colorlib Template">
                             </a>
                             <div class="text py-3 px-3">
                                 <h3><a href="#" class="card-name">Tạ Tay PROCASE Sắt Bọc Nhựa 3 Kg</a></h3>
@@ -112,7 +112,7 @@
                     </div>
                     <div class="col-sm-6 col-md-4 col-lg-3 p-3">
                         <div class="product" style="background-color: #E8EBF4; border-radius: 30px; height: 460px;">
-                            <a href="#" class="img-prod"><img class="img-fluid mx-auto p-3 d-block" src="./view/src/public/img/Rectangle13(2).png" alt="Colorlib Template">
+                            <a href="#" class="img-prod"><img class="img-fluid mx-auto p-3 d-block" src="{{ url('img/Rectangle13(2).png')}}" alt="Colorlib Template">
                             </a>
                             <div class="text py-3 px-3">
                                 <h3><a href="#" class="card-name">Balo NIKE  Utility Elite màu đen</a></h3>
@@ -124,7 +124,7 @@
                     </div>
                     <div class="col-sm-6 col-md-4 col-lg-3 p-3">
                         <div class="product" style="background-color: #E8EBF4; border-radius: 30px; height: 460px;">
-                            <a href="#" class="img-prod"><img class="img-fluid mx-auto p-3 d-block" src="./view/src/public/img/Rectangle13(3).png" alt="Colorlib Template">
+                            <a href="#" class="img-prod"><img class="img-fluid mx-auto p-3 d-block" src="{{ url('img/Rectangle13(3).png')}}" alt="Colorlib Template">
                             </a>
                             <div class="text py-3 px-3">
                                 <h3><a href="#" class="card-name">Áo croptop tập luyện nữ PUMA</a></h3>
@@ -136,7 +136,7 @@
                     </div>
                     <div class="col-sm-6 col-md-4 col-lg-3 p-3">
                         <div class="product" style="background-color: #E8EBF4; border-radius: 30px; height: 460px;">
-                            <a href="#" class="img-prod"><img class="img-fluid mx-auto p-3 d-block" src="./view/src/public/img/Rectangle13(4).png" alt="Colorlib Template">
+                            <a href="#" class="img-prod"><img class="img-fluid mx-auto p-3 d-block" src="{{ url('img/Rectangle13(4).png')}}" alt="Colorlib Template">
                             </a>
                             <div class="text py-3 px-3">
                                 <h3><a href="#"  class="card-name">Giày Tập Luyện Unisex PUMA</a></h3>
@@ -148,7 +148,7 @@
                     </div>
                     <div class="col-sm-6 col-md-4 col-lg-3 p-3">
                         <div class="product" style="background-color: #E8EBF4; border-radius: 30px; height: 460px;">
-                            <a href="#" class="img-prod"><img class="img-fluid mx-auto p-3 d-block" src="./view/src/public/img/Rectangle13(5).png" alt="Colorlib Template">
+                            <a href="#" class="img-prod"><img class="img-fluid mx-auto p-3 d-block" src="{{ url('img/Rectangle13(5).png')}}" alt="Colorlib Template">
                             </a>
                             <div class="text py-3 px-3">
                                 <h3><a href="#"  class="card-name">Áo Khoác Thể thao Nam PUMA</a></h3>
@@ -161,7 +161,7 @@
                     </div>
                     <div class="col-sm-6 col-md-4 col-lg-3 p-3">
                         <div class="product" style="background-color: #E8EBF4; border-radius: 30px; height: 460px;">
-                            <a href="#" class="img-prod"><img class="img-fluid mx-auto p-3 d-block" src="./view/src/public/img/Rectangle13(6).png" alt="Colorlib Template">
+                            <a href="#" class="img-prod"><img class="img-fluid mx-auto p-3 d-block" src="{{ url('img/Rectangle13(6).png')}}" alt="Colorlib Template">
                             </a>
                             <div class="text py-3 px-3">
                                 <h3><a href="#"  class="card-name">Quần legging nữ NIKE màu đen  </a></h3>
@@ -173,7 +173,7 @@
                     </div>
                     <div class="col-sm-6 col-md-4 col-lg-3 p-3">
                         <div class="product" style="background-color: #E8EBF4; border-radius: 30px; height: 460px;">
-                            <a href="#" class="img-prod"><img class="img-fluid mx-auto p-3 d-block" src="./view/src/public/img/Rectangle13(7).png" alt="Colorlib Template">
+                            <a href="#" class="img-prod"><img class="img-fluid mx-auto p-3 d-block" src="{{ url('img/Rectangle13(7).png')}}" alt="Colorlib Template">
                             </a>
                             <div class="text py-3 px-3">
                                 <h3><a href="#"  class="card-name">Balo tập luyện ERKE màu xanh</a></h3>
@@ -185,7 +185,7 @@
                     </div>
                     <div class="col-sm-6 col-md-4 col-lg-3 p-3">
                         <div class="product" style="background-color: #E8EBF4; border-radius: 30px; height: 460px;">
-                            <a href="#" class="img-prod"><img class="img-fluid mx-auto p-3 d-block" src="./view/src/public/img/Rectangle13(8).png" alt="Colorlib Template">
+                            <a href="#" class="img-prod"><img class="img-fluid mx-auto p-3 d-block" src="{{ url('img/Rectangle13(8).png')}}" alt="Colorlib Template">
                             </a>
                             <div class="text py-3 px-3">
                                 <h3><a href="#"  class="card-name">Áo Bra tập luyện nữ ADIDAS</a></h3>
@@ -197,7 +197,7 @@
                     </div>
                     <div class="col-sm-6 col-md-4 col-lg-3 p-3">
                         <div class="product" style="background-color: #E8EBF4; border-radius: 30px; height: 460px;">
-                            <a href="#" class="img-prod"><img class="img-fluid mx-auto p-3 d-block" src="./view/src/public/img/Rectangle13(9).png" alt="Colorlib Template">
+                            <a href="#" class="img-prod"><img class="img-fluid mx-auto p-3 d-block" src="{{ url('img/Rectangle13(9).png')}}" alt="Colorlib Template">
                             </a>
                             <div class="text py-3 px-3">
                                 <h3><a href="#"  class="card-name">Băng ống tay tập luyện ZAMST</a></h3>
@@ -209,7 +209,7 @@
                     </div>
                     <div class="col-sm-6 col-md-4 col-lg-3 p-3">
                         <div class="product" style="background-color: #E8EBF4; border-radius: 30px; height: 460px;">
-                            <a href="#" class="img-prod"><img class="img-fluid mx-auto p-3 d-block" src="./view/src/public/img/Rectangle13(10).png" alt="Colorlib Template">
+                            <a href="#" class="img-prod"><img class="img-fluid mx-auto p-3 d-block" src="{{ url('img/Rectangle13(10).png')}}" alt="Colorlib Template">
                             </a>
                             <div class="text py-3 px-3">
                                 <h3><a href="#"  class="card-name">Áo croptop tập luyện nữ PUMA</a></h3>
@@ -222,7 +222,7 @@
                     </div>
                     <div class="col-sm-6 col-md-4 col-lg-3 p-3">
                         <div class="product" style="background-color: #E8EBF4; border-radius: 30px; height: 460px;">
-                            <a href="#" class="img-prod"><img class="img-fluid mx-auto p-3 d-block" src="./view/src/public/img/Rectangle13(11).png" alt="Colorlib Template">
+                            <a href="#" class="img-prod"><img class="img-fluid mx-auto p-3 d-block" src="{{ url('img/Rectangle13(11).png')}}" alt="Colorlib Template">
                             </a>
                             <div class="text py-3 px-3">
                                 <h3><a href="#"  class="card-name">Áo Polo nam LIVAN MILER</a></h3>
@@ -234,7 +234,7 @@
                     </div>
                     <div class="col-sm-6 col-md-4 col-lg-3 p-3">
                         <div class="product" style="background-color: #E8EBF4; border-radius: 30px; height: 460px;">
-                            <a href="#" class="img-prod"><img class="img-fluid mx-auto p-3 d-block" src="./view/src/public/img/Rectangle13(12).png" alt="Colorlib Template">
+                            <a href="#" class="img-prod"><img class="img-fluid mx-auto p-3 d-block" src="{{ url('img/Rectangle13(12).png')}}" alt="Colorlib Template">
                             </a>
                             <div class="text py-3 px-3">
                                 <h3><a href="#"  class="card-name">Nón Lưỡi Trai REEBOK</a></h3>
@@ -246,7 +246,7 @@
                     </div>
                     <div class="col-sm-6 col-md-4 col-lg-3 p-3">
                         <div class="product" style="background-color: #E8EBF4; border-radius: 30px; height: 460px;">
-                            <a href="#" class="img-prod"><img class="img-fluid mx-auto p-3 d-block" src="./view/src/public/img/Rectangle13(13).png" alt="Colorlib Template">
+                            <a href="#" class="img-prod"><img class="img-fluid mx-auto p-3 d-block" src="{{ url('img/Rectangle13(13).png')}}" alt="Colorlib Template">
                             </a>
                             <div class="text py-3 px-3">
                                 <h3><a href="#"  class="card-name">Dép Lifestyle unisex PUMA màu xanh</a></h3>
@@ -258,7 +258,7 @@
                     </div>
                     <div class="col-sm-6 col-md-4 col-lg-3 p-3">
                         <div class="product" style="background-color: #E8EBF4; border-radius: 30px; height: 460px;">
-                            <a href="#" class="img-prod"><img class="img-fluid mx-auto p-3 d-block" src="./view/src/public/img/Rectangle13(14).png" alt="Colorlib Template">
+                            <a href="#" class="img-prod"><img class="img-fluid mx-auto p-3 d-block" src="{{ url('img/Rectangle13(14).png')}}" alt="Colorlib Template">
                             </a>
                             <div class="text py-3 px-3">
                                 <h3><a href="#"  class="card-name">Thảm YOGA tập luyện PUMA màu đen</a></h3>
@@ -270,7 +270,7 @@
                     </div>
                     <div class="col-sm-6 col-md-4 col-lg-3 p-3">
                         <div class="product" style="background-color: #E8EBF4; border-radius: 30px; height: 460px;">
-                            <a href="#" class="img-prod"><img class="img-fluid mx-auto p-3 d-block" src="./view/src/public/img/Rectangle13(15).png" alt="Colorlib Template">
+                            <a href="#" class="img-prod"><img class="img-fluid mx-auto p-3 d-block" src="{{ url('img/Rectangle13(15).png')}}" alt="Colorlib Template">
                             </a>
                             <div class="text py-3 px-3">
                                 <h3><a href="#"  class="card-name">Set đồ tập tay ngắn màu xám</a></h3>
