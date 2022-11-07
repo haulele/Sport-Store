@@ -11,6 +11,8 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
         <link href="{{ url('css/index.css') }}" type="text/css" rel="stylesheet"> 
+        <link href='https://fonts.googleapis.com/css?family=Work Sans' rel='stylesheet'>
+        <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
     </head>
 
     <body>
@@ -22,7 +24,7 @@
                     <div class="Info-signup-signin row pt-3">
                         <p class="header-email d-none d-sm-block col-md-2 text-center text-white">chuoilacuit@gmail.com</p>
                         <p class="header-hotline d-none d-sm-block text-start text-white col-md-4">Hotline:<span style="color: #FFFF00; padding-left: 17px;">0969 432 235</span></p>
-                        <a class="sign-in text-end col-8 col-md-3 text-white pb-3" href="#" style="text-decoration: none;">Đăng ký</a>
+                        <a class="sign-in text-end col-8 col-md-4 text-white pb-3" href="#" style="text-decoration: none;">Đăng ký</a>
                         <a class="logn-in text-center col-4 col-md-2 text-white" href="#" style="text-decoration: none;">Đăng nhập</a>
                     </div>
                 </div>
@@ -33,7 +35,7 @@
                             <button class="navbar-toggler" type="button" data-bs-toggle=collapse data-bs-target=#navbarSupportedContent aria-controls=navbarSupportedContent aria-expanded=false aria-label="Toggle navigation">
                                 <span class="navbar-toggler-icon"></span>
                             </button>
-                            <a class="navbar-brand ms-auto me-auto fw-bold shop-brand" href=# style="color: #415EC6;">BANASPORTS</a> 
+                            <a class="navbar-brand ms-auto me-auto shop-brand fw-bold" href=# style="color: #415EC6;">BANASPORTS</a> 
                             <div class="navbar-collapse collapse" id=navbarSupportedContent>
                                 <ul class="navbar-nav ms-auto fs-5 justify-content-end">
                                     <li class="nav-item px-1">
@@ -88,9 +90,9 @@
                     <article class="col-12 col-sm-6 col-lg-4">
                         <div class="card demo-card" style="border-radius: 1.875rem; background-color: #E8EBF4;">
                             <div class="card-body text-center p-4">
-                                <img src="{{ url('img/new-product-1.png') }}" alt="No image available" style="width: 90%">
-                                <h1 class="mt-9 mb-0 fs-4 pt-3 text-black text-center fw-bold">Giày chạy bộ nam NIKE</h1>
-                                <h1 class="mt-9 mb-0 fs-4 fw-bold text-center" style="color: #415EC6;">6.900.000</h1>
+                                <img src="{{ url('img/new-product-1.png') }}" alt="No image available" style="width: 100%">
+                                <h1 class="fs-4 pt-3 text-black text-center fw-bold">Giày chạy bộ nam NIKE</h1>
+                                <h1 class="fs-4 fw-bold text-center" style="color: #415EC6;">6.900.000</h1>
                             </div>
                         <a href=# target=_blank class=card-link-overlay></a>
                         </div>
@@ -98,9 +100,9 @@
                     <article class="col-12 col-sm-6 col-lg-4">
                         <div class="card demo-card" style="border-radius: 1.875rem; background-color: #E8EBF4;">
                             <div class="card-body text-center p-4">
-                                <img src="{{ url('img/new-product-2.png') }}" alt="No image available" style="width: 90%">
-                                <h1 class="mt-9 mb-0 fs-4 pt-3 text-black text-center fw-bold">Áo nỉ bông RANGERS màu xanh </h1>
-                                <h1 class="mt-9 mb-0 fs-4 fw-bold text-center" style="color: #415EC6;">2.200.000</h1>
+                                <img src="{{ url('img/new-product-2.png') }}" alt="No image available" style="width: 100%">
+                                <h1 class="mt-9 fs-4 pt-3 text-black text-center fw-bold">Áo nỉ bông RANGERS</h1>
+                                <h1 class="mt-9 fs-4 fw-bold text-center" style="color: #415EC6;">2.200.000</h1>
                             </div>
                             <a href=# target=_blank class=card-link-overlay></a>
                         </div>
@@ -108,9 +110,9 @@
                     <article class="col-12 col-sm-6 col-lg-4">
                         <div class="card demo-card" style="border-radius: 1.875rem; background-color: #E8EBF4;">
                             <div class="card-body text-center p-4">
-                                <img src="{{ url('img/new-product-3.png') }}" alt="No image available" style="width: 90%">
-                                <h1 class="mt-9 mb-0 fs-4 pt-3 text-black text-center fw-bold">Vợt tennis Babolat màu xanh </h1>
-                                <h1 class="mt-9 mb-0 fs-4 fw-bold text-center" style="color: #415EC6;">600.000</h1>
+                                <img src="{{ url('img/new-product-3.png') }}" alt="No image available" style="width: 100%">
+                                <h1 class="mt-9 fs-4 pt-3 text-black text-center fw-bold">Vợt tennis Babolat</h1>
+                                <h1 class="mt-9 fs-4 fw-bold text-center" style="color: #415EC6;">600.000</h1>
                             </div>
                             <a href=# target=_blank class=card-link-overlay></a>
                         </div>
@@ -137,9 +139,9 @@
                     <article class="col-12 col-sm-6 col-lg-4">
                         <div class="card demo-card" style="border-radius: 1.875rem; background-color: #E8EBF4;">
                             <div class="card-body text-center p-4">
-                                <img src="{{ url('img/selling-product-1') }}.png" alt="No image available" style="width: 90%">
-                                <h1 class="mt-9 mb-0 fs-4 pt-3 text-black text-center fw-bold">Áo Bra tập luyện cho nữ ADIDAS </h1>
-                                <h1 class="mt-9 mb-0 fs-4 fw-bold text-center" style="color: #415EC6;">1.125.000</h1>
+                                <img src="{{ url('img/selling-product-1') }}.png" alt="No image available" style="width: 100%">
+                                <h1 class="mt-9 fs-4 pt-3 text-black text-center fw-bold">Áo Bra tập luyện ADIDAS </h1>
+                                <h1 class="mt-9 fs-4 fw-bold text-center" style="color: #415EC6;">1.125.000</h1>
                             </div>
                             <a href=# target=_blank class=card-link-overlay></a>
                         </div>
@@ -147,9 +149,9 @@
                     <article class="col-12 col-sm-6 col-lg-4">
                         <div class="card demo-card" style="border-radius: 1.875rem; background-color: #E8EBF4;">
                             <div class="card-body text-center p-4">
-                                <img src="{{ url('img/selling-product-2') }}.png" alt="No image available" style="width: 90%">
-                                <h1 class="mt-9 mb-0 fs-4 pt-3 text-black text-center fw-bold">Giày bóng đá nam NIKE</h1>
-                                <h1 class="mt-9 mb-0 fs-4 fw-bold text-center" style="color: #415EC6;">1.305.000</h1>
+                                <img src="{{ url('img/selling-product-2') }}.png" alt="No image available" style="width: 100%">
+                                <h1 class="mt-9 fs-4 pt-3 text-black text-center fw-bold">Giày bóng đá nam NIKE</h1>
+                                <h1 class="mt-9 fs-4 fw-bold text-center" style="color: #415EC6;">1.305.000</h1>
                             </div>
                             <a href=# target=_blank class=card-link-overlay></a>
                         </div>
@@ -157,9 +159,9 @@
                     <article class="col-12 col-sm-6 col-lg-4">
                         <div class="card demo-card" style="border-radius: 1.875rem; background-color: #E8EBF4;">
                             <div class="card-body text-center p-4">
-                                <img src="{{ url('img/selling-product-3') }}.png" alt="No image available" style="width: 90%">
-                                <h1 class="mt-9 mb-0 fs-4 pt-3 text-black text-center fw-bold">Bóng rổ ADIDAS all - court</h1>
-                                <h1 class="mt-9 mb-0 fs-4 fw-bold text-center" style="color: #415EC6;">600.000</h1>
+                                <img src="{{ url('img/selling-product-3') }}.png" alt="No image available" style="width: 100%">
+                                <h1 class="mt-9 fs-4 pt-3 text-black text-center fw-bold">Bóng rổ ADIDAS all - court</h1>
+                                <h1 class="mt-9 fs-4 fw-bold text-center" style="color: #415EC6;">600.000</h1>
                             </div>
                         <a href=# target=_blank class=card-link-overlay></a>
                         </div>
@@ -186,7 +188,7 @@
                     <article class="col-12 col-md-6">
                         <div class="card demo-card" style="border-radius: 1.875rem; background-color: #E8EBF4;">
                             <div class="card-body text-center p-4">
-                                <img src="{{ url('img/event-1.png') }}" alt="No image available" style="width: 90%">
+                                <img src="{{ url('img/event-1.png') }}" alt="No image available" style="width: 100%">
                                 <h1 class="mt-9 mb-0 fs-4 pt-3 text-black text-center fw-bold">NGÀY VÀNG - NGÀN ƯU ĐÃI </h1>
                                 <h2 class="mt-9 mb-0 fs-5 text-black text-center" >Cơ hội vàng để mua sắm hàng ngàn sản phẩm chính hãng với ưu đãi lên tới 50 - 70%</h2>
                             </div>
@@ -196,7 +198,7 @@
                     <article class="col-md-6">
                         <div class="card demo-card" style="border-radius: 1.875rem; background-color: #E8EBF4;">
                             <div class="card-body text-center p-4">
-                                <img src="{{ url('img/event-2.png') }}" alt="No image available" style="width: 90%">
+                                <img src="{{ url('img/event-2.png') }}" alt="No image available" style="width: 100%">
                                 <h1 class="mt-9 mb-0 fs-4 pt-3 text-black text-center fw-bold">“SIÊU GIÀY” CHÍNH THỨC RA MẮT</h1>
                                 <h2 class="mt-9 mb-0 fs-5 text-black text-center" >BOOM INFINITY 2 - Giày chạy bộ giảm chấn được mong chờ nhất trong năm 2022 </h2>
                             </div>
