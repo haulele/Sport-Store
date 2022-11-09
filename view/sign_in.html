@@ -23,11 +23,11 @@
                     <div class="container"> 
                         <div class="row">
                         <h1 class="text-center my-5 logo-name pt-3">BANASPORTS</h1>
-                            <div class="col-md-12 col-md-offset-4">  
+                            <div class="col-md-12 col-md-offset-4 parent">  
                                     <!-- name -->
                                 <div class="form-group row">
                                     <div class=" col-11 form-floating mb-3">
-                                        <input type="text" class="form-control" id="floatingInput" placeholder="name" required>
+                                        <input type="text" class="form-control" id="name" placeholder="name" required>
                                         <label for="floatingInput" class="form-lable ps-4"> Tên</label>
                                         <div class="invalid-feedback">
                                             Vui lòng nhập tên của bạn
@@ -37,7 +37,7 @@
                                 <!-- email -->
                                 <div class="form-group row">
                                     <div class="col-11 form-floating mb-3">
-                                        <input type="email" class="form-control" name="email" autocomplete="email" id="floatingInput" placeholder="name@example.com" required>
+                                        <input type="email" class="form-control" name="email" autocomplete="email" id="email" placeholder="name@example.com" required>
                                         <label for="floatingInput" class="form-lable ps-4">Email</label>
                                         <div class="invalid-feedback">
                                             Vui lòng nhập email của bạn
@@ -57,28 +57,28 @@
                                 <!-- password -->
                                 <div class="form-group row">
                                     <div class="col-11 form-floating mb-3">
-                                        <input type="password" class="form-control col-4" id="floatingPassword" placeholder="Password"  required aria-label="password" aria-describedby="basic-addon1" >
-                                        <label for="floatingPassword" class="form-lable ps-4">Mật khẩu</label>
+                                        <input type="password" class="form-control col-4 password" id="password" placeholder="Password"  required aria-label="password" aria-describedby="basic-addon1" >
+                                        <label for="password" class="form-lable ps-4">Mật khẩu</label>
                                         <div class="invalid-feedback">
                                             Vui lòng nhập mật khẩu
                                         </div>
                                     </div>
-                                    <div class="col-1 align-self-center" onclick="password_show_hide();">
-                                        <i class="bi bi-eye-slash-fill" id="show_eye"></i>
-                                        <i class="bi bi-eye-fill d-none" id="hide_eye"></i>
+                                    <div class="col-1 align-self-center" onclick="password_show_hide('password')">
+                                        <i class="bi bi-eye-slash-fill show_eye"></i>
+                                        <i class="bi bi-eye-fill d-none hide_eye"></i>
                                     </div>
                                 </div>
                                 <div class="form-group row">
                                     <div class="col-11 form-floating mb-3">
-                                        <input type="password" class="form-control col-4" id="floatingPassword" placeholder="Password"  required aria-label="password" aria-describedby="basic-addon1" >
-                                        <label for="floatingPassword" class="form-lable ps-4">Nhập lại mật khẩu</label>
+                                        <input type="password" class="form-control col-4 password" id="password_recheck" placeholder="Password"  required aria-label="password" aria-describedby="basic-addon1" >
+                                        <label for="password_recheck" class="form-lable ps-4">Nhập lại mật khẩu</label>
                                         <div class="invalid-feedback">
                                             Vui lòng nhập lại mật khẩu
                                         </div>
                                     </div>
-                                    <div class="col-1 align-self-center" onclick="password_show_hide();">
-                                        <i class="bi bi-eye-slash-fill" id="show_eye"></i>
-                                        <i class="bi bi-eye-fill d-none" id="hide_eye"></i>
+                                    <div class="col-1 align-self-center" onclick="password_show_hide('password_recheck')">
+                                        <i class="bi bi-eye-slash-fill show_eye"></i>
+                                        <i class="bi bi-eye-fill d-none hide_eye"></i>
                                     </div>
                                 </div>
                                 <button class="btn float-end mb-2 me-5 fw-bold" type="submit" href="#" style="background-color: #52C673; color:white;"> 
