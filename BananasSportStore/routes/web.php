@@ -31,4 +31,14 @@ Route::get('/sign_in', function () {
 Route::get('/home', function () {
     return view('home');
 });
+Route::prefix('categories')->group(function () {
+    Route::get('/create', [
+        'as' => 'categories.create',
+        'uses' => 'App\Http\Controllers\CategoryController@create'
+    ]);
+    Route::get('/index', [
+        'as' => 'categories.index',
+        'uses' => 'App\Http\Controllers\CategoryController@index'
+    ]);
+});
 
