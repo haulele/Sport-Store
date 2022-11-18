@@ -16,18 +16,6 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('index');
 });
-Route::get('/about', function () {
-    return view('about');
-});
-Route::get('/contact', function () {
-    return view('contact');
-});
-Route::get('/product', function () {
-    return view('product');
-});
-Route::get('/sign_in', function () {
-    return view('sign_in');
-});
 Route::get('/home', function () {
     return view('home');
 });
@@ -39,6 +27,10 @@ Route::prefix('categories')->group(function () {
     Route::get('/index', [
         'as' => 'categories.index',
         'uses' => 'App\Http\Controllers\CategoryController@index'
+    ]);
+    Route::post('/store', [
+        'as' => 'categories.store',
+        'uses' => 'App\Http\Controllers\CategoryController@store'
     ]);
 });
 
