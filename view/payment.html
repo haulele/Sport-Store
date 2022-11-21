@@ -119,7 +119,7 @@
                                             <!-- Ghi chú -->
                                             <div class="form-group">
                                                 <div class="col-12 form-floating mb-3">
-                                                    <input type="text" class="form-control" name="Note" autocomplete="" id="floatingInput" placeholder="Note" required>
+                                                    <textarea class="form-control" id="floatingInput" placeholder="Note" rows="3" required></textarea>
                                                     <label for="floatingInput" class="form-lable ps-4">Ghi chú</label>
                                                 </div>
                                             </div>
@@ -167,7 +167,7 @@
                 <!-- Đơn hàng -->
                 <div class="col-lg-4">
                     <div class="accordion accordion-borderless" id="accordionFlushExampleX">
-                        <div class="accordion-item">
+                        <div class="accordion-item" style="background-color: #E8EBF4;">
                             <h2 class="accordion-header" id="flush-headingOneX">
                             <button class="accordion-button text-black fw-bold" type="button" data-mdb-toggle="collapse"
                                 data-mdb-target="#flush-collapseOneX" aria-expanded="true" aria-controls="flush-collapseOneX">
@@ -200,7 +200,7 @@
                             <form class="needs-validation" action="" method="post" novalidate >
                                 <div class="form-group row">
                                     <div class="col-7 form-floating mb-3 ms-3">
-                                        <input type="text" class="form-control" name="code" autocomplete="" id="floatingInput" placeholder="Nhập mã giảm giá" required>
+                                        <input type="text" class="form-control" name="code" autocomplete="" id="floatingInput" placeholder="Nhập mã giảm giá" style="border: 1px solid #474444B2;" required>
                                         <label for="floatingInput" class="form-lable ps-4">Nhập mã giảm giá</label>
                                         <div class="invalid-feedback">
                                             Vui lòng nhập mã giảm giá
@@ -239,11 +239,10 @@
                             </div>
 
                             <div class="row mb-3">
-                                <div class="col-1 mt-2">
-                                    <i class="bi bi-chevron-left ms-3" style="color:#415EC6"></i>
-                                </div>
-                                <div class="col-5 mt-2">
-                                    <a class="text-decoration-none" style="color: #415EC6;" href="#">Quay về giỏ hàng</a>
+                                <div class="col-6 mt-2">
+                                    <i class="bi bi-chevron-left ms-3" style="color:#415EC6">
+                                        <a class="text-decoration-none" style="color: #415EC6;" href="#">Quay về giỏ hàng</a>
+                                    </i>
                                 </div>
                                 <div class="col-5">
                                     <button class="btn px-4 py-2 fw-bold float-end mb-3" type="submit" href="#" style="background-color: #068F70; color:white;">Đặt hàng</button>
