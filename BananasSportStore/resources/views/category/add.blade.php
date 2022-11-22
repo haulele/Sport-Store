@@ -22,10 +22,13 @@
                             <label for="inputCategories" class="form-label">Tên danh mục</label>
                             <input type="text" class="form-control" placeholder="Nhập tên danh mục" name="name" aria-describedby="Categories">
                         </div>
-                        <select class="form-select mb-3" name="parent_id" aria-label=".form-select-lg example">
-                            <option selected>Chọn danh mục cha</option>
-                            {{!! $htmlOption !!}}
-                        </select>
+                        <div class="form-group">
+                            <label for="inputCategories" class="form-label">Tên danh mục cha</label>
+                            <select class="form-select mb-3" name="parent_id" aria-label=".form-select-lg example">
+                                <option selected>Chọn danh mục cha</option>
+                                {{!! $htmlOption !!}}
+                            </select>
+                        </div>
                         <button type="submit" class="btn btn-primary">Submit</button>
                     </form>
                 </div>

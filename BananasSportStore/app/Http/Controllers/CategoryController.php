@@ -59,12 +59,20 @@ class CategoryController extends Controller
 
     public function update($id, Request $request)
     {
+        $parent = is_numeric($request->parent_id) ? $request->parent_id : 0;
+
         $this->category->find($id)->update([
             'name' => $request->name,
-            'parent_id' => $request->parent_id,
+            'parent_id' => $parent,
             'slug' =>  str_slug($request->name),
         ]);
 
+        return redirect()->route('categories.index');
+    }
+
+    public function delete($id)
+    {
+        $this->category->find($id)->delete();
         return redirect()->route('categories.index');
     }
 }

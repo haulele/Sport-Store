@@ -8,7 +8,7 @@
 <!-- content wrapper -->
 <div class="content-wrapper">
     <!-- Content Header (Page header) -->
-    @include('partials.content-header', ['name' => 'category', 'key' => 'Edit'])
+    @include('partials.content-header', ['name' => 'Menus', 'key' => 'Add'])
     <!-- /.content-header -->
 
     <!-- Main content -->
@@ -16,18 +16,16 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="col-md-6">
-                    <form action="{{ route('categories.update',['id' => $category->id]) }}" method="POST">
+                    <form action="{{ route('menus.store') }}" method="POST">
                         @csrf
                         <div class="form-group">
-                            <label for="inputCategories" class="form-label">Tên danh mục</label>
-                            <input type="text" class="form-control" placeholder="Nhập tên danh mục"
-                            name="name" aria-describedby="Categories" value="{{ $category->name }}">
+                            <label for="inputCategories" class="form-label">Tên menu</label>
+                            <input type="text" class="form-control" placeholder="Nhập tên menu" name="name" aria-describedby="Categories">
                         </div>
                         <div class="form-group">
-                            <label for="inputCategories" class="form-label">Tên danh mục cha</label>
+                        <label for="inputCategories" class="form-label">Tên menu cha</label>
                             <select class="form-select mb-3" name="parent_id" aria-label=".form-select-lg example">
-                                <option selected>Chọn danh mục cha</option>
-                                {{!! $htmlOption !!}}
+                                <option selected>Chọn menu cha</option>
                             </select>
                         </div>
                         <button type="submit" class="btn btn-primary">Submit</button>
