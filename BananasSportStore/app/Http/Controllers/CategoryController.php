@@ -9,7 +9,6 @@ use App\Components\Recursive;
 
 class CategoryController extends Controller
 {
-    private $htmlSelect;
     public function __construct(Category $category)
     {
         $this->category = $category;
