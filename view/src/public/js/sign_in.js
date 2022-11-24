@@ -1,27 +1,7 @@
-// (function () {
-//   'use strict'
-
-//   // Fetch all the forms we want to apply custom Bootstrap validation styles to
-//   var forms = document.querySelectorAll('.needs-validation')
-
-//   // Loop over them and prevent submission
-//   Array.prototype.slice.call(forms)
-//     .forEach(function (form) {
-//       form.addEventListener('submit', function (event) {
-//         if (!form.checkValidity()) {
-//           event.preventDefault()
-//           event.stopPropagation()
-//         }
-
-//         form.classList.add('was-validated')
-//       }, false)
-//     })
-// })()
-
-function password_show_hide() {
-  var x = document.getElementById("floatingPassword");
-  var show_eye = document.getElementById("show_eye");
-  var hide_eye = document.getElementById("hide_eye");
+function password_show_hide(targetID) {
+var x = document.getElementById(targetID);
+  var show_eye = x.parentElement.nextElementSibling.firstElementChild;
+  var hide_eye = x.parentElement.nextElementSibling.lastElementChild;
   hide_eye.classList.remove("d-none");
   if (x.type === "password") {
     x.type = "text";
@@ -33,4 +13,3 @@ function password_show_hide() {
     hide_eye.style.display = "none";
   }
 }
-
