@@ -30,11 +30,39 @@ class MenuController extends Controller
 
     public function store(Request $request) 
     {
+        $parent = is_numeric($request->parent_id) ? $request->parent_id : 0;
         $this->menu->create([
             'name' => $request->name,
-            'parent_id' => $request->parent_id,
+            'parent_id' =>  $parent,
             'slug' => str_slug($request->name)
         ]);
         return redirect()->route('menus.index');
     }
+
+
+
+    public function edit(Request $request, $id) 
+    {
+        $menuFollowIdEdit = $this->menu->find($id);
+        $optionSelect = $this->menuRecursive->MenuRecursiveEdit($menuFollowIdEdit->parent_id);
+        return view('menus.edit', compact('optionSelect', 'menuFollowIdEdit'));
+    }
+
+    public function update(Request $request, $id)
+    {
+        $parent = is_numeric($request->parent_id) ? $request->parent_id : 0;
+        $this->menu->find($id)->update([
+            'name' => $request->name,
+            'parent_id' => $parent,
+            'slug' => str_slug($request->name)
+        ]);    
+        return redirect()->route('menus.index');
+    }
+
+    public function delete($id)
+    {
+        $this->menu->find($id)->delete();
+        return redirect()->route('menus.index');
+    }
+
 }

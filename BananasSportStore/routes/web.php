@@ -63,7 +63,21 @@ Route::prefix('menus')->group(function () {
         'as' => 'menus.store',
         'uses' => 'App\Http\Controllers\MenuController@store'
     ]);
-    
+
+    Route::get('/edit/{id}', [
+        'as' => 'menus.edit',
+        'uses' => 'App\Http\Controllers\MenuController@edit'
+    ]);
+
+    Route::post('/update/{id}', [
+        'as' => 'menus.update',
+        'uses' => 'App\Http\Controllers\MenuController@update'
+    ]);
+
+    Route::get('/delete/{id}', [
+        'as' => 'menus.delete',
+        'uses' => 'App\Http\Controllers\MenuController@delete'
+    ]);
 });
 
 
