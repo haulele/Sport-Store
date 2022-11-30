@@ -1,14 +1,14 @@
 @extends('layouts.admin')
  
 @section('title')
-  <title>Homepage</title>
+  <title>Add product</title>
 @endsection
  
 @section('content')
 <!-- content wrapper -->
 <div class="content-wrapper">
     <!-- Content Header (Page header) -->
-    @include('partials.content-header', ['name' => 'Category', 'key' => 'List'])
+    @include('partials.content-header', ['name' => 'Product', 'key' => 'List'])
     <!-- /.content-header -->
 
     <!-- Main content -->
@@ -16,33 +16,39 @@
       <div class="container-fluid">
         <div class="row">
           <div class="col-md-12">
-            <a href="{{ route('categories.create') }}" class="btn btn-success float-right m-2">Add</a>
+            <a href="{{ route('product.create') }}" class="btn btn-success float-right m-2">Add</a>
           </div>
           <div class="col-md-12">
             <table class="table">
               <thead>
                 <tr>
                   <th scope="col">#</th>
-                  <th scope="col">Tên danh mục</th>
+                  <th scope="col">Tên sản phẩm</th>
+                  <th scope="col">Giá</th>
+                  <th scope="col">Hình ảnh</th>
+                  <th scope="col">Danh mục</th>
                   <th scope="col">Action</th>
                 </tr>
               </thead>
               <tbody>
-                @foreach($categories as $category)
+                
                 <tr>
-                  <th scope="row">{{ $category-> id }}</th>
-                  <td>{{ $category->name }}</td>
+                  <th scope="row">1</th>
+                  <td>Iphone 11</td>
+                  <td>100000</td>
+                  <td><img src="" alt=""></td>
+                  <td>Điện thoại</td>
                   <td>
-                    <a href="{{ route('categories.edit', ['id' => $category->id]) }}" class="btn btn-default">Edit</a>
-                    <a href="{{ route('categories.delete', ['id' => $category->id]) }}" class="btn btn-danger">Delete</a>
+                    <a href="" class="btn btn-primary">Edit</a>
+                    <a href="" class="btn btn-danger">Delete</a>
                   </td>
                 </tr>
-                @endforeach
+                
               </tbody>
             </table>
           </div>
           <div class="col-md-12 text-center">
-            {{ $categories->links() }}
+            
           </div>
         </div>
         <!-- /.row -->

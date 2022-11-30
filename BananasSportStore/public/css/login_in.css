@@ -1,6 +1,7 @@
-
-.signup{
-    margin-bottom: 38px;
+@media (max-width: 819px) {
+    .sign-in-img{
+        display: none;
+    }
 }
 
 .logo-name{
