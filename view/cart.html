@@ -25,11 +25,7 @@
                     </ol>
                 </nav>
             </div>
-        </div>
-
-        <!-- Đây là ... ...-->
-
-        
+        </div>      
 
         <div class="container">
             <div class="row pt-4 pb-3 mb-4 fw-bold" style="background-color: #E8EBF4; border-radius: 20px;">
@@ -65,9 +61,9 @@
                 </div>
                 <div class="col-2 text-center pt-4">
                     <div class="input-spinner" style="border: 1px solid #474444; border-radius: 10px;">
-                        <input type="button" value="-" onclick="minus()" class="button-minus btn btn-sm" data-field="quantity">
-                        <input type="number" name="quantity" id="text_box" step="1" max="10" min="1" value="1" class="quantity-field form-control-sm form-input text-center" style="border: none; background-color: #E8EBF4;">
-                        <input type="button" value="+" onclick="sum()" class="button-plus btn btn-sm" data-field="quantity">
+                        <input type="button" value="-" onclick="minus('text_box')" class="button-minus btn btn-sm minus" data-field="quantity">
+                        <input type="number" name="quantity" id="text_box" step="1" max="10" min="1" value="1" class="quantity-field form-control-sm form-input text-center num" style="border: none; background-color: #E8EBF4;">
+                        <input type="button" value="+" onclick="sum('text_box')" class="button-plus btn btn-sm plus" data-field="quantity">
                     </div>
                 </div>
                 <div class="col-2 text-center">
@@ -99,9 +95,9 @@
                 <!-- Quantity -->
                 <div class="col-2 text-center pt-4">
                     <div class="input-spinner" style="border: 1px solid #474444; border-radius: 10px;">
-                        <input type="button" value="-" onclick="minus()" class="button-minus btn btn-sm" data-field="quantity">
-                        <input type="number" name="quantity" id="textbox" step="1" max="10" min="1" value="1" class="quantity-field form-control-sm form-input text-center" style="border: none; background-color: #E8EBF4;">
-                        <input type="button" value="+" onclick="sum()" class="button-plus btn btn-sm" data-field="quantity">
+                        <input type="button" value="-" onclick="minus('textbox')" class="button-minus btn btn-sm minus" data-field="quantity">
+                        <input type="number" name="quantity" id="textbox" step="1" max="10" min="1" value="1" class="quantity-field form-control-sm form-input text-center num" style="border: none; background-color: #E8EBF4;">
+                        <input type="button" value="+" onclick="sum('textbox')" class="button-plus btn btn-sm plus" data-field="quantity">
                     </div>
                 </div>
                 <div class="col-2 text-center">
@@ -131,24 +127,6 @@
             </div>
         </div>
 
-        <script type="text/javascript">
-            function sum()
-            {
-                // lấy giá trị của textbox
-                var t = document.getElementById("textbox").value;
-                //cộng thêm 1 đơn vị rồi gán trở lại cho textbox
-                document.getElementById("textbox").value = parseInt(t) + 1;
-            }
-
-            function minus()
-            {
-                // lấy giá trị của textbox
-                var t = document.getElementById("textbox").value;
-                // Từ đi 1 đơn vị rồi gán trở lại cho textbox
-                if(parseInt(t)>1) {
-                    document.getElementById("textbox").value = parseInt(t) - 1;   
-                }
-            }
-        </script>
+        
     </body>
 </html>
