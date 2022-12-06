@@ -4,6 +4,15 @@
   <title>Add product</title>
 @endsection
  
+@section('css')
+  <link rel="stylesheet" href="{{ asset('admins/product/image.css') }}">
+@endsection
+
+@section('js')
+  <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="{{ asset('admins/product/image.js') }}"></script>
+@endsection
+
 @section('content')
 <!-- content wrapper -->
 <div class="content-wrapper">
@@ -31,24 +40,24 @@
                 </tr>
               </thead>
               <tbody>
-                
+              @foreach($products as $productItem)
                 <tr>
-                  <th scope="row">1</th>
-                  <td>Iphone 11</td>
-                  <td>100000</td>
-                  <td><img src="" alt=""></td>
-                  <td>Điện thoại</td>
+                  <th scope="row">{{ $productItem->id }}</th>
+                  <td>{{ $productItem->name }}</td>
+                  <td>{{ number_format($productItem->price) }} đ</td>
+                  <td><img class="product-img" src="{{ $productItem->feature_image_path }}" alt=""></td>
+                  <td>{{ optional($productItem->category)->name }}</td>
                   <td>
-                    <a href="" class="btn btn-primary">Edit</a>
-                    <a href="" class="btn btn-danger">Delete</a>
+                    <a href="{{ route('product.edit', ['id' => $productItem->id]) }}" class="btn btn-primary">Edit</a>
+                    <a href="" data-url = "{{ route('product.delete', ['id' => $productItem->id]) }}" class="btn btn-danger action-delete">Delete</a>
                   </td>
                 </tr>
-                
+              @endforeach
               </tbody>
             </table>
           </div>
           <div class="col-md-12 text-center">
-            
+            {{ $products->links() }}
           </div>
         </div>
         <!-- /.row -->

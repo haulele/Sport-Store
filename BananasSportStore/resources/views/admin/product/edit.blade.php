@@ -14,11 +14,11 @@
 <!-- content wrapper -->
 <div class="content-wrapper">
     <!-- Content Header (Page header) -->
-    @include('partials.content-header', ['name' => 'Product', 'key' => 'Add'])
+    @include('partials.content-header', ['name' => 'Product', 'key' => 'Edit'])
     <!-- /.content-header -->
 
     <!-- Main content -->
-    <form action="{{ route('product.store') }}" method="POST" enctype="multipart/form-data">
+    <form action="{{ route('product.update', ['id' => $product->id ]) }}" method="POST" enctype="multipart/form-data">
         <div class="content">
             <div class="container-fluid">
                 <div class="row">
@@ -26,22 +26,38 @@
                         @csrf
                         <div class="form-group">
                             <label for="inputProducts" class="form-label">Tên sản phẩm</label>
-                            <input type="text" class="form-control" placeholder="Nhập tên sản phẩm" name="name">
+                            <input type="text" class="form-control" placeholder="Nhập tên sản phẩm" name="name"
+                            value="{{ $product->name }}">
                         </div>
 
                         <div class="form-group">
                             <label for="inputProductsPrice" class="form-label">Giá sản phẩm</label>
-                            <input type="text" class="form-control" placeholder="Nhập giá sản phẩm" name="price">
+                            <input type="text" class="form-control" placeholder="Nhập giá sản phẩm" name="price"
+                            value="{{ $product->price }}">
                         </div>
 
                         <div class="form-group">
-                            <label for="inputProductsPicture" class="form-label">Hình ảnh sản phẩm</label>
+                            <label for="inputProductsPicture" class="form-label">Hình ảnh đại diện sản phẩm</label>
                             <input type="file" class="form-control" name="feature_image_path">
+                            <div class="col-md-12">
+                                <div class="row">
+                                    <img src="{{ $product->feature_image_path }}" alt="">
+                                </div>
+                            </div>
                         </div>
 
                         <div class="form-group">
                             <label for="inputProductsDetailPictures" class="form-label">Hình ảnh chi tiết</label>
                             <input type="file" multiple class="form-control" name="image_path[]">
+                            <div class="col-md-12">
+                                <div class= "row">
+                                    @foreach($product->productImages as $productImageItem)
+                                        <div class="col-md-6">
+                                            <img src="{{ $productImageItem->image_path }}" alt="" style="max-width: 100%;">
+                                        </div>
+                                    @endforeach
+                                </div>
+                            </div>
                         </div>
 
                         <div class="form-group">
@@ -55,7 +71,7 @@
                     <div class="col-md-12">
                         <div class="form-group">
                             <label>Content</label>
-                            <textarea class="form-control tinymce_editor_init" name="content" style="height: 100px"></textarea>
+                            <textarea class="form-control tinymce_editor_init" name="content" style="height: 100px">{{ $product->content }}</textarea>
                         </div>
                     </div>
                     <div class="col-md-12">
