@@ -6,6 +6,7 @@
 
 @section('css')
 <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+<link rel="stylesheet" href="{{ asset('admins/product/add.css') }}">
 @endsection
 
 
@@ -16,7 +17,17 @@
     <!-- Content Header (Page header) -->
     @include('partials.content-header', ['name' => 'Product', 'key' => 'Add'])
     <!-- /.content-header -->
-
+    <!-- <div class="col-md-12">
+        @if ($errors->any())
+            <div class="alert alert-danger">
+                <ul>
+                    @foreach ($errors->all() as $error)
+                        <li>{{ $error }}</li>
+                    @endforeach
+                </ul>
+            </div>
+        @endif
+    </div> -->
     <!-- Main content -->
     <form action="{{ route('product.store') }}" method="POST" enctype="multipart/form-data">
         <div class="content">
@@ -26,12 +37,19 @@
                         @csrf
                         <div class="form-group">
                             <label for="inputProducts" class="form-label">Tên sản phẩm</label>
-                            <input type="text" class="form-control" placeholder="Nhập tên sản phẩm" name="name">
+                            <input type="text" class="form-control @error('name') is-invalid @enderror" placeholder="Nhập tên sản phẩm" name="name"
+                            value="{{ old('name') }}">
+                            @error('name')
+                            <div class="alert alert-danger">{{ $message }}</div>
+                            @enderror
                         </div>
-
                         <div class="form-group">
                             <label for="inputProductsPrice" class="form-label">Giá sản phẩm</label>
-                            <input type="text" class="form-control" placeholder="Nhập giá sản phẩm" name="price">
+                            <input type="text" class="form-control @error('price') is-invalid @enderror" placeholder="Nhập giá sản phẩm" name="price"
+                            value="{{ old('price') }}">
+                            @error('price')
+                            <div class="alert alert-danger">{{ $message }}</div>
+                            @enderror
                         </div>
 
                         <div class="form-group">
@@ -46,17 +64,24 @@
 
                         <div class="form-group">
                             <label for="inputCategories" class="form-label">Tên danh mục</label>
-                            <select class="form-select mb-3" name="category_id" aria-label=".form-select-lg example">
-                                <option selected>Chọn danh mục</option>
+                            <select class="form-select mb-3 @error('price') is-invalid @enderror" name="category_id" aria-label=".form-select-lg example">
+                                <option value="">Chọn danh mục</option>
                                 {{!! $htmlOption !!}}
                             </select>
+                            @error('category_id')
+                            <div class="alert alert-danger">{{ $message }}</div>
+                            @enderror
                         </div>
                     </div>
                     <div class="col-md-12">
                         <div class="form-group">
                             <label>Content</label>
-                            <textarea class="form-control tinymce_editor_init" name="content" style="height: 100px"></textarea>
+                            <textarea class="form-control tinymce_editor_init @error('content') is-invalid @enderror" name="content" style="height: 100px">
+                            {{ old('content') }}</textarea>
                         </div>
+                        @error('content')
+                            <div class="alert alert-danger">{{ $message }}</div>
+                        @enderror
                     </div>
                     <div class="col-md-12">
                         <button type="submit" class="btn btn-primary">Submit</button>

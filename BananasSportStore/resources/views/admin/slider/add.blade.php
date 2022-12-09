@@ -1,0 +1,79 @@
+@extends('layouts.admin')
+ 
+@section('title')
+  <title>Homepage</title>
+@endsection
+
+@section('css')
+<link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+<link rel="stylesheet" href="{{ asset('admins/slider/add.css') }}">
+@endsection
+
+
+
+@section('content')
+<!-- content wrapper -->
+<div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    @include('partials.content-header', ['name' => 'Slider', 'key' => 'Add'])
+    <!-- /.content-header -->
+    <!-- <div class="col-md-12">
+        @if ($errors->any())
+            <div class="alert alert-danger">
+                <ul>
+                    @foreach ($errors->all() as $error)
+                        <li>{{ $error }}</li>
+                    @endforeach
+                </ul>
+            </div>
+        @endif
+    </div> -->
+    <!-- Main content -->
+    <form action="{{ route('slider.store') }}" method="POST" enctype="multipart/form-data">
+        <div class="content">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-6">
+                        @csrf
+                        <div class="form-group">
+                            <label for="inputSliders" class="form-label">Tên slider</label>
+                            <input type="text" class="form-control @error('name') is-invalid @enderror" placeholder="Nhập tên slider" name="name"
+                            value="{{ old('name') }}">
+                            @error('name')
+                            <div class="alert alert-danger">{{ $message }}</div>
+                            @enderror
+                        </div>
+                        <div class="form-group">
+                            <label for="inputProductsDescription" class="form-label">Mô tả slider</label>
+                            <textarea type="text" class="form-control @error('description') is-invalid @enderror" rows="4" name="description">{{old('description')}}</textarea>
+                            @error('description')
+                            <div class="alert alert-danger">{{ $message }}</div>
+                            @enderror
+                        </div>
+                        <div class="form-group">
+                            <label for="inputSliderImage" class="form-label"></label>
+                            <input type="file" class="form-control @error('image_path') is-invalid @enderror"
+                            name="image_path">
+                            @error('image_path')
+                            <div class="alert alert-danger">{{ $message }}</div>
+                            @enderror
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </div>
+                </div>
+            <!-- /.row -->
+            </div><!-- /.container-fluid -->
+        </div>
+    </form>
+    <!-- /.content -->
+</div>
+<!-- end content wrapper -->
+@endsection
+
+@section('js')
+<script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+<script src="https://cdn.tiny.cloud/1/gr27ln33dlzzdkzagvdlbgjr2t8nyqn436hqhfudhhtbjpx2/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
+<script src=""></script>
+@endsection

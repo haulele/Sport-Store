@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 use App\Components\Recursive;
+use App\Http\Requests\ProductAddRequest;
 use App\Models\Category;
 use App\Models\Product;
 use App\Traits\StorageImageTrait;
@@ -44,7 +45,7 @@ class ProductController extends Controller
         return $htmlOption;
     }
 
-    public function store(Request $request)
+    public function store(ProductAddRequest $request)
     {
         try {
             DB::beginTransaction();

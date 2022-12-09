@@ -114,6 +114,40 @@ Route::prefix('admin')->group(function (){
         ]);
 
     });
+    //Sliders
+    Route::prefix('slider')->group(function () {
+        Route::get('/', [
+            'as' => 'slider.index',
+            'uses' => 'App\Http\Controllers\SliderController@index'
+        ]);
+
+        Route::get('/create', [
+            'as' => 'slider.create',
+            'uses' => 'App\Http\Controllers\SliderController@create'
+        ]);
+
+        Route::post('/store', [
+            'as' => 'slider.store',
+            'uses' => 'App\Http\Controllers\SliderController@store'
+        ]);
+
+        Route::get('/edit/{id}', [
+            'as' => 'slider.edit',
+            'uses' => 'App\Http\Controllers\SliderController@edit'
+        ]);
+        
+        Route::post('/update/{id}', [
+            'as' => 'slider.update',
+            'uses' => 'App\Http\Controllers\SliderController@update'
+        ]);
+
+        Route::get('/delete/{id}', [
+            'as' => 'slider.delete',
+            'uses' => 'App\Http\Controllers\SliderController@delete'
+        ]);
+
+
+    });
 });
 
 
