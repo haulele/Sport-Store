@@ -3,7 +3,12 @@
 @section('title')
   <title>Homepage</title>
 @endsection
- 
+
+@section('js')
+  <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="{{ asset('admins/main.js') }}"></script>
+@endsection
+
 @section('content')
 <!-- content wrapper -->
 <div class="content-wrapper">
@@ -34,7 +39,7 @@
                   <td>{{ $category->name }}</td>
                   <td>
                     <a href="{{ route('categories.edit', ['id' => $category->id]) }}" class="btn btn-primary">Edit</a>
-                    <a href="{{ route('categories.delete', ['id' => $category->id]) }}" class="btn btn-danger">Delete</a>
+                    <a href="" data-url="{{ route('categories.delete', ['id' => $category->id]) }}" class="btn btn-danger action-delete">Delete</a>
                   </td>
                 </tr>
                 @endforeach

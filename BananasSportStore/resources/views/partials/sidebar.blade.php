@@ -37,7 +37,6 @@
               <i class="nav-icon fas fa-th"></i>
               <p>
                 Danh mục sản phẩm
-                <span class="right badge badge-danger">New</span>
               </p>
             </a>
           </li>
@@ -47,7 +46,6 @@
               <i class="nav-icon fas fa-th"></i>
               <p>
                 Menus
-          
               </p>
             </a>
           </li>
@@ -56,8 +54,7 @@
             <a href="{{ route('product.index') }}" class="nav-link">
               <i class="nav-icon fas fa-th"></i>
               <p>
-                Sản phẩm
-                
+                Sản phẩm       
               </p>
             </a>
           </li>
@@ -71,7 +68,7 @@
           </li>
 
           <li class="nav-item">
-            <a href="" class="nav-link">
+            <a href="{{ route('settings.index')}}" class="nav-link">
               <i class="nav-icon fas fa-th"></i>
               <p>
                 Setting

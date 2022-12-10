@@ -10,14 +10,14 @@
 
 @section('js')
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <script src="{{ asset('admins/slider/index.js') }}"></script>
+    <script src="{{ asset('admins/main.js') }}"></script>
 @endsection
 
 
 @section('content')
 
     <div class="content-wrapper">
-        @include('partials.content-header', ['name' => 'Slider', 'key' => 'Add'])
+        @include('partials.content-header', ['name' => 'Slider', 'key' => 'List'])
 
         <div class="content">
             <div class="container-fluid">

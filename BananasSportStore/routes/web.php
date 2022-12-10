@@ -148,6 +148,39 @@ Route::prefix('admin')->group(function (){
 
 
     });
+    //Setting
+    Route::prefix('settings')->group(function () {
+        Route::get('/', [
+            'as' => 'settings.index',
+            'uses' => 'App\Http\Controllers\SettingController@index'
+        ]);
+
+        Route::get('/create', [
+            'as' => 'settings.create',
+            'uses' => 'App\Http\Controllers\SettingController@create'
+        ]);
+
+        Route::post('/store', [
+            'as' => 'settings.store',
+            'uses' => 'App\Http\Controllers\SettingController@store'
+        ]);
+
+        Route::get('/edit/{id}', [
+            'as' => 'settings.edit',
+            'uses' => 'App\Http\Controllers\SettingController@edit'
+        ]);
+
+        Route::post('/update/{id}', [
+            'as' => 'settings.update',
+            'uses' => 'App\Http\Controllers\SettingController@update'
+        ]);
+
+        Route::get('/delete/{id}', [
+            'as' => 'settings.delete',
+            'uses' => 'App\Http\Controllers\SettingController@delete'
+        ]);
+
+    });
 });
 
 
