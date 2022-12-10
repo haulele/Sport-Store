@@ -29,11 +29,23 @@ article {
     padding-top: 15px;
 }
 
+.btn-cart{
+    border: none;
+    background-color: #FFFFFF;
+}
+
 @media (min-width: 992px) {
     .shop-brand{
         font-size: 40px; 
     }
 }
+
+@media (max-width: 767px) {
+    .header-hotline {
+        text-align: center;
+    }
+}
+
 @media (max-width: 576px) {
     .shop-brand{
         font-size: 24px;
