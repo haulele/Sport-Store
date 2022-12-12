@@ -206,6 +206,11 @@ Route::prefix('homepage')->group(function() {
         'as' => 'layouts.introduce',
         'uses' => 'App\Http\Controllers\HomepageController@introduce'
     ]);
+    //contact
+    Route::get('/contact', [
+        'as' => 'layouts.contact',
+        'uses' => 'App\Http\Controllers\HomepageController@contact'
+    ]);
 });
 
 

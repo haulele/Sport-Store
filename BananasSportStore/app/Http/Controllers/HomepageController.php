@@ -15,4 +15,7 @@ class HomepageController extends Controller
     public function introduce(){
         return view('end-users.introduce');
     }
+    public function contact() {
+        return view('end-users.contact');
+    }
 }

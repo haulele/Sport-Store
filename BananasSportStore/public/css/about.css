@@ -4,7 +4,6 @@
 .site-blocks-cover{
     background-image: url('../img/Rectangle15.png');
 }
-
 .caption{
     margin-top: 30px;
     padding: 30px;
@@ -23,12 +22,8 @@
 }
 .icon-content{
     color: #415EC6;
-    margin-left: 30px;
     padding-top: 10px;
     
-}
-.icon-img{
-    margin-left: 30%;
 }
 p{
     text-align: justify;

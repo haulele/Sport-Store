@@ -1,6 +1,11 @@
 *{
     font-family: 'Roboto';
 }
+
+.site-blocks-cover {
+    background-image: url('../img/Rectangle15.png');
+}
+
 .caption{
     margin-top: 30px;
     padding: 30px;

@@ -30,7 +30,7 @@
                             <a class="nav-link " data-toggle=none href="{{ route('layouts.product') }}">Sản phẩm</a>
                         </li>
                         <li class="nav-item px-1">
-                            <a class="nav-link " data-toggle=none href=#>Liên hệ</a>
+                            <a class="nav-link " data-toggle=none href="{{ route('layouts.contact') }}">Liên hệ</a>
                         </li>
                     </ul>
                     <div class="navbar-spacer"></div>
