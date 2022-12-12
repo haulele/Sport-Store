@@ -1,0 +1,84 @@
+*{
+    font-family: 'Roboto';
+    border-radius: 9px;
+}
+.hr-about{
+    border: 2px solid #415EC6;
+    border-bottom: none;
+    border-right: none;
+    border-left: none;
+}
+
+.nav-item a.active{
+    color: #415EC6!important
+}
+.breadcrumb-item + .breadcrumb-item::before {
+    content: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI4IiBoZWlnaHQ9IjgiPjxwYXRoIGQ9Ik0yLjUgMEwxIDEuNSAzLjUgNCAxIDYuNSAyLjUgOGw0LTQtNC00eiIgZmlsbD0iY3VycmVudENvbG9yIi8+PC9zdmc+) !important;
+ }
+  .funkyradio input:empty{
+    display: none;
+  }
+  
+  .funkyradio input:empty ~ label{
+    position: relative;
+    text-indent: 3.25em;
+    margin-top: 1em;
+    
+
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+  }
+  
+  .funkyradio input[type="radio"]:empty ~ label:before{
+    position: absolute;
+
+    top: 0;
+    bottom: 0;
+    left: 0;
+    content: '';
+    width: 20px;
+    border: none;
+    align-items: center;
+    border: 2px solid #474444;
+
+  }
+  .funkyradio label {
+    width: 15%;
+   
+    height: 20px;
+    border-radius: 3px;
+   
+    font-weight: normal;
+
+  }
+  
+  
+  .funkyradio input[type="radio"]:hover:not(:checked) ~ label {
+  color: rgb(26, 14, 14);
+ 
+}
+
+  
+  .funkyradio input[type="radio"]:checked ~ label:before{
+    content: '\2714';
+    text-indent: 0.2em;
+    text-rendering: auto;
+
+  }
+  
+
+  
+  
+  .funkyradio-primary input[type="radio"]:checked ~ label:before{
+    color: #415EC6;
+    border: 2px solid #415EC6;
+    height: 20px;
+    width: 20px;
+    border-radius: 3px;
+    text-align: center;
+
+    
+  }
+ 
