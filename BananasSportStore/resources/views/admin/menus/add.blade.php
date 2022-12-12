@@ -8,7 +8,7 @@
 <!-- content wrapper -->
 <div class="content-wrapper">
     <!-- Content Header (Page header) -->
-    @include('partials.content-header', ['name' => 'Menus', 'key' => 'Add'])
+    @include('partials.admin_partials.content-header', ['name' => 'Menus', 'key' => 'Add'])
     <!-- /.content-header -->
 
     <!-- Main content -->

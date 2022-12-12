@@ -1,77 +1,23 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BANASPORTS</title>
-        <link rel="stylesheet" href="./view/src/css/product.css">
-        <link rel="stylesheet" href="./view/src/public/font/themify-icons-font/themify-icons/themify-icons.css">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
-</head>
-<body>
-    <div class="site-blocks-cover" style="background-image: url(./view/src/public/img/Rectangle15.png);">
-        <div class="container">
-            <div class="site-img">
-                    <div class="caption">
-                        <h3><b>TẤT CẢ SẢN PHẨM</b></h3>
-                    </div>
-            </div>
-        </div>
-    </div> 
-<div class="filter">
-    <div class="container-fluid">
-      <div class="row justify-content-center py-4">
-            <div class="col-lg-1 col-md-2 col-sm-4 col text-center py-1">
-                <p><a href="#" class="btn btn-outlined btn-info">Áo</a>
-                </p>
-            </div>
-            <div class="col-lg-1 col-md-2 col-sm-4 col text-center py-1">
-                
-                <p><a href="#" class="btn btn-outlined btn-info">Quần</a>
-                </p>
-            </div>
-            <div class="col-lg-1 col-md-2 col-sm-4 col text-center py-1">
-                        
-                <p><a href="#" class="btn btn-outlined btn-info">Giày dép</a>
-                </p>
-            </div>
-            <div class="col-lg-2 col-md-3 col-sm-4 col text-center ml-lg-4 py-1">
-                        
-                <p><a href="#" class="btn btn-outlined btn-info">Dụng cụ thể thao</a>
-                </p>
-            </div>
-            <div class="col-lg-1 col-md-2 col-sm-4 col text-center py-1">
-                        
-                <p><a href="#" class="btn btn-outlined btn-info ">Gym</a>
-                </p>
-            </div>
-            <div class="col-lg-1 col-sm-4 text-center col col-md-2 py-1">
-                        
-                <p><a href="#" class="btn btn-outlined btn-info">Tennis</a>
-                </p>
-            </div>
-            <div class="col-lg-1 col-sm-4 text-center col col-md-2 py-1">
-                        
-                <p><a href="#" class="btn btn-outlined btn-info">Bóng đá</a>
-                </p>
-            </div>
-            <div class="col-lg-1 col-sm-4 text-center col col-md-2 py-1 ml-lg-3">
-                        
-                <p><a href="#" class="btn btn-outlined btn-info">Bóng rổ</a>
-                </p>
-            </div>
-            <div class="col-lg-1 col-sm-4 text-center col col-md-2 py-1 ml-lg-3">
-                        
-                <p><a href="#" class="btn btn-outlined btn-info">Chạy bộ</a>
-                </p>
+@extends('layouts.homepage')
+
+@section('css')
+<link rel="stylesheet" href="{{ asset('css/product.css') }}">
+@endsection
+
+@section('js')
+
+@endsection
+
+@section('content')
+<div class="site-blocks-cover"> 
+    <div class="container">
+        <div class="site-img">
+            <div class="caption">
+                <h3><b>TẤT CẢ SẢN PHẨM</b></h3>
             </div>
         </div>
     </div>
-</div>
-
+</div> 
 <section class="ftco-section bg-light">
     <div class="container">
         <div class="row">
@@ -297,5 +243,4 @@
         </div>
     </div>
 </section>
-</body>
-</html>
+@endsection

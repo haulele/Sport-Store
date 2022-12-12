@@ -181,6 +181,31 @@ Route::prefix('admin')->group(function (){
         ]);
 
     });
+    //User
+    Route::prefix('users')->group(function () {
+        Route::get('/', [
+            'as' => 'users.index',
+            'uses' => 'App\Http\Controllers\UserAdminController@index'
+        ]);
+    });
+});
+
+Route::prefix('homepage')->group(function() {
+    //homepage
+    Route::get('/', [
+        'as' => 'layouts.homepage',
+        'uses' => 'App\Http\Controllers\HomepageController@index'
+    ]);
+    //full-product
+    Route::get('/product', [
+        'as' => 'layouts.product',
+        'uses' => 'App\Http\Controllers\HomepageController@product'
+    ]);
+    //introduce-shop
+    Route::get('/introduce', [
+        'as' => 'layouts.introduce',
+        'uses' => 'App\Http\Controllers\HomepageController@introduce'
+    ]);
 });
 
 

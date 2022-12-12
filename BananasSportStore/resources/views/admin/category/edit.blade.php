@@ -1,14 +1,14 @@
 @extends('layouts.admin')
  
 @section('title')
-  <title>Homepage</title>
+  <title>Adminpage</title>
 @endsection
  
 @section('content')
 <!-- content wrapper -->
 <div class="content-wrapper">
     <!-- Content Header (Page header) -->
-    @include('partials.content-header', ['name' => 'Category', 'key' => 'Edit'])
+    @include('partials.admin_partials.content-header', ['name' => 'Category', 'key' => 'Edit'])
     <!-- /.content-header -->
 
     <!-- Main content -->

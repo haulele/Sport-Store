@@ -15,7 +15,7 @@
 <!-- content wrapper -->
 <div class="content-wrapper">
     <!-- Content Header (Page header) -->
-    @include('partials.content-header', ['name' => 'Slider', 'key' => 'Edit'])
+    @include('partials.admin_partials.content-header', ['name' => 'Slider', 'key' => 'Edit'])
     <!-- /.content-header -->
     <!-- Main content -->
     <form action="{{route('slider.update', ['id' => $slider->id] )}}" method="POST" enctype="multipart/form-data">

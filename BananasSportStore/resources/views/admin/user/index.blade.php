@@ -5,7 +5,7 @@
 @endsection
 
 @section('css')
-    <link rel="stylesheet" href="{{ asset('admins/slider/index.css') }}">
+    <!-- <link rel="stylesheet" href="{{ asset('admins/slider/index.css') }}"> -->
 @endsection
 
 @section('js')
@@ -17,41 +17,37 @@
 @section('content')
 
     <div class="content-wrapper">
-        @include('partials.admin_partials.content-header', ['name' => 'Slider', 'key' => 'List'])
+        @include('partials.admin_partials.content-header', ['name' => 'User', 'key' => 'List'])
 
         <div class="content">
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-md-12">
-                        <a href="{{ route('slider.create') }}" class="btn btn-success float-right m-2"> Add</a>
+                        <a href="" class="btn btn-success float-right m-2"> Add</a>
                     </div>
                     <div class="col-md-12">
                         <table class="table">
                             <thead>
                             <tr>
                                 <th scope="col">#</th>
-                                <th scope="col">Tên slider</th>
-                                <th scope="col">Desciption</th>
-                                <th scope="col">Hình ảnh</th>
+                                <th scope="col">Tên</th>
+                                <th scope="col">Email</th>
                                 <th scope="col">Action</th>
                             </tr>
                             </thead>
                             <tbody>
 
-                            @foreach($sliders as $slider)
+                            @foreach($users as $user)
 
                                 <tr>
-                                    <th scope="row">{{ $slider->id }}</th>
-                                    <td>{{ $slider->name }}</td>
-                                    <td class="">{{ $slider->description }}</td>
+                                    <th scope="row">{{ $user->id }}</th>
+                                    <td>{{ $user->name }}</td>
+                                    <td>{{ $user->email }}</td>
                                     <td>
-                                        <img class="image_slider" src="{{ $slider->image_path}}" alt="">
-                                    </td>
-                                    <td>
-                                        <a href="{{ route('slider.edit', ['id' => $slider->id]) }}"
+                                        <a href=""
                                            class="btn btn-primary">Edit</a>
                                         <a href=""
-                                           data-url="{{ route('slider.delete', ['id' => $slider->id]) }}"
+                                           data-url=""
                                            class="btn btn-danger action-delete">Delete</a>
 
                                     </td>
@@ -62,7 +58,7 @@
                         </table>
                     </div>
                     <div class="col-md-12">
-                        {{ $sliders->links() }}
+                        {{ $users->links() }}
                     </div>
 
                 </div>

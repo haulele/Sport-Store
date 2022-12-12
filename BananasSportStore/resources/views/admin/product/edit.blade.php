@@ -14,7 +14,7 @@
 <!-- content wrapper -->
 <div class="content-wrapper">
     <!-- Content Header (Page header) -->
-    @include('partials.content-header', ['name' => 'Product', 'key' => 'Edit'])
+    @include('partials.admin_partials.content-header', ['name' => 'Product', 'key' => 'Edit'])
     <!-- /.content-header -->
 
     <!-- Main content -->

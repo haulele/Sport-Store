@@ -15,7 +15,7 @@
 <!-- content wrapper -->
 <div class="content-wrapper">
     <!-- Content Header (Page header) -->
-    @include('partials.content-header', ['name' => 'Setting', 'key' => 'Edit'])
+    @include('partials.admin_partials.content-header', ['name' => 'Setting', 'key' => 'Edit'])
     <!-- /.content-header -->
     <!-- Main content -->
     <form action="{{route('settings.update', ['id' => $setting->id ]) }}" method="POST" enctype="multipart/form-data">

@@ -1,7 +1,7 @@
 @extends('layouts.admin')
  
 @section('title')
-  <title>Homepage</title>
+  <title>Adminpage</title>
 @endsection
 
 @section('js')
@@ -13,7 +13,7 @@
 <!-- content wrapper -->
 <div class="content-wrapper">
     <!-- Content Header (Page header) -->
-    @include('partials.content-header', ['name' => 'Category', 'key' => 'List'])
+    @include('partials.admin_partials.content-header', ['name' => 'Category', 'key' => 'List'])
     <!-- /.content-header -->
 
     <!-- Main content -->

@@ -15,7 +15,7 @@
 <!-- content wrapper -->
 <div class="content-wrapper">
     <!-- Content Header (Page header) -->
-    @include('partials.content-header', ['name' => 'Product', 'key' => 'Add'])
+    @include('partials.admin_partials.content-header', ['name' => 'Product', 'key' => 'Add'])
     <!-- /.content-header -->
     <!-- <div class="col-md-12">
         @if ($errors->any())
