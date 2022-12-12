@@ -4,10 +4,10 @@
         <div class="container-fluid">
             <!-- SIGN IN/ LOGIN IN --> 
             <div class="Info-signup-signin row pt-3">
-                <p class="header-email d-none d-sm-block col-md-2 text-center text-white">chuoilacuit@gmail.com</p>
-                <p class="header-hotline d-none d-sm-block text-start text-white col-md-4">Hotline:<span style="color: #FFFF00; padding-left: 17px;">0969 432 235</span></p>
-                <a class="sign-in text-end col-8 col-md-4 text-white pb-3" href="#" style="text-decoration: none;">Đăng ký</a>
-                <a class="logn-in text-center col-4 col-md-2 text-white" href="#" style="text-decoration: none;">Đăng nhập</a>
+                <p class="header-email d-none d-sm-block col-md-3 text-center text-white">chuoilacuit@gmail.com</p>
+                <p class="header-hotline d-none d-sm-block text-white col-md-4">Hotline:<span style="color: #FFFF00; padding-left: 17px;">0969 432 235</span></p>
+                <a class="sign-in text-end col-5 col-md-3 text-white pb-3" href="#" style="text-decoration: none;">Đăng ký</a>
+                <a class="logn-in text-center col-5 col-md-2 text-white" href="#" style="text-decoration: none;">Đăng nhập</a>
             </div>
         </div>
     </div>
@@ -44,8 +44,10 @@
                 </div>
                 <!-- Shopping -->
                 <div class="cart text-center">
-                    <i class="bi-bag-fill bi"></i>
-                    <p class="bag">Giỏ hàng</p>
+                    <button class="btn-cart">
+                        <img src=" {{ asset('font/themify-icons-font/themify-icons/SVG/cart.svg')}}" alt="Shopping Bag">
+                        <p class="bag">Giỏ hàng</p>
+                    </button>
                 </div>
             </div>
         </nav>
