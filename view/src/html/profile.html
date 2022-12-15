@@ -16,7 +16,7 @@
         <link href="https://unpkg.com/gijgo@1.9.14/css/gijgo.min.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
-	<div class="container">
+    <div class="container">
         <div class="row">
             <nav  >
                 <ol class="breadcrumb mt-3" style="background-color: #fff;">
@@ -53,57 +53,47 @@
                     </div>
                 </div>
             </div>
-            <div class="container py-2 col-md-8">
-            <div class=" p-5 " style="background-color: #E8EBF4; height: 450px;">
-                <h2 class="text-center" style="color: #415EC6"><b>Hồ sơ của tôi</b></h2>
-                <div class="input-group my-3">
-                    <label class="col-3 " for="usr"><b>Tên tài khoản:</b></label>
-                    <input type="text" class="form-control col-7" style="background-color: #E8EBF4; border-radius: 9px;" id="usr">
-                    <a class="px-3 " style="color: #068F70; text-decoration-line: underline; font-style: italic;" href="#">Thay đổi</a></li>
-                  </div>
-                  <div class="input-group my-3">
-                    <label class="col-3" for="usr"><b>Email:</b></label>
-                    <input type="text" class="form-control col-7" style="background-color: #E8EBF4; border-radius: 9px;"  id="usr">
-                    <a class="px-3 " style="color: #068F70; text-decoration-line: underline; font-style: italic;" href="#">Thay đổi</a></li>
-                  </div>
-                  <div class="input-group my-3">
-                    <label class="col-3" for="usr"><b>Số điện thoại:</b></label>
-                    <input type="text" class="form-control col-7" style="background-color: #E8EBF4; border-radius: 9px;"  id="usr">
-                    <a class="px-3 " style="color: #068F70; text-decoration-line: underline; font-style: italic;" href="#">Thay đổi</a></li>
-                  </div>
-                  <div class="row container flex-nowrap ">
-                    <label class="col-4 m-auto" for="usr"><b>Giới tính:</b></label>
-                    <div class="funkyradio row   flex-nowrap justify-content-start">
-                        <div class="funkyradio-primary form-check-inline col-3">
-                            <input type="radio" name="radio" id="radio1" class="form-check-input" />
-                            <label for="radio1">Nam</label>
-                        </div>
-                        <div class="funkyradio-primary form-check-inline col-3">
-                            <input type="radio" name="radio" id="radio2" class="form-check-input" checked/>
-                            <label for="radio2" style="text-align: center;">Nữ</label>
-                        </div>
-                        
-                    </div>
-                    
+            <div class="container card py-2 col-md-8" style="background-color: #E8EBF4;">
+	    <div class=" p-5">
+		<h2 class="text-center" style="color: #415EC6"><b>Hồ sơ của tôi</b></h2>
+		<div class="input-group my-3">
+		    <label class="col-3 " for="usr"><b>Tên tài khoản:</b></label>
+		    <input type="text" class="form-control col-7" style="background-color: #E8EBF4; border-radius: 9px;" id="usr">
+		    <a class="px-3 " style="color: #068F70; text-decoration-line: underline; font-style: italic;" href="#">Thay đổi</a></li>
+		  </div>
+		  <div class="input-group my-3">
+		    <label class="col-3" for="usr"><b>Email:</b></label>
+		    <input type="text" class="form-control col-7" style="background-color: #E8EBF4; border-radius: 9px;"  id="usr">
+		    <a class="px-3 " style="color: #068F70; text-decoration-line: underline; font-style: italic;" href="#">Thay đổi</a></li>
+		  </div>
+		  <div class="input-group my-3">
+		    <label class="col-3" for="usr"><b>Số điện thoại:</b></label>
+		    <input type="text" class="form-control col-7" style="background-color: #E8EBF4; border-radius: 9px;"  id="usr">
+		    <a class="px-3 " style="color: #068F70; text-decoration-line: underline; font-style: italic;" href="#">Thay đổi</a></li>
+		  </div>
+		  <div class="row container flex-nowrap ">
+		    <label class="col-4 m-auto" for="usr"><b>Giới tính:</b></label>
+		    <div class="funkyradio row flex-nowrap justify-content-start">
+			<div class="funkyradio-primary form-check-inline col-3">
+			    <input type="radio" name="radio" id="radio1" class="form-check-input" />
+			    <label for="radio1" class="col-12" >Nam</label>
+			</div>
+			<div class="funkyradio-primary form-check-inline col-3">
+			    <input type="radio" name="radio" id="radio2" class="form-check-input" checked/>
+			    <label for="radio2" class="col-12" >Nữ</label>
+			</div>
+		</div>
                 </div>
                 <div class="input-group my-3">
                     <label class="col-3" for="usr"><b>Ngày sinh:</b></label>
                 <input style="background-color: #E8EBF4; border-top-left-radius: 9px; border-bottom-left-radius: 9px;" id="datepicker" width="200" />
-    <script>
-        $('#datepicker').datepicker({
-            uiLibrary: 'bootstrap4'
-        });
-    </script>
-                 </div>
+		<script>
+		$('#datepicker').datepicker({
+		uiLibrary: 'bootstrap4'});
+		</script>  
+                </div>
             </div>
-                       
-                    </div>
-                 </div>
-            </div>
-        </div>
-       
-        
-    </div>
-   
+        </div>  
+    </div> 
 </body>
 </html>
