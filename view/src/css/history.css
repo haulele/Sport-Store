@@ -1,0 +1,19 @@
+*{
+    font-family: 'Roboto';
+}
+.hr-about{
+    border: 2px solid #415EC6;
+    border-bottom: none;
+    border-right: none;
+    border-left: none;
+}
+
+.nav-item a.active{
+    color: #415EC6!important
+}
+.breadcrumb-item + .breadcrumb-item::before {
+    content: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI4IiBoZWlnaHQ9IjgiPjxwYXRoIGQ9Ik0yLjUgMEwxIDEuNSAzLjUgNCAxIDYuNSAyLjUgOGw0LTQtNC00eiIgZmlsbD0iY3VycmVudENvbG9yIi8+PC9zdmc+) !important;
+ }
+ .img{ 
+    max-width: 100%;
+ }
