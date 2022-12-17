@@ -223,6 +223,11 @@ Route::prefix('homepage')->group(function() {
         'as' => 'layouts.homepage',
         'uses' => 'App\Http\Controllers\HomepageController@index'
     ]);
+    //product follow category
+    Route::get('/category/{slug}/{id}', [
+        'as' => 'category.product',
+        'uses' => 'App\Http\Controllers\HomepageController@categoryProduct'
+    ]);
     //full-product
     Route::get('/product', [
         'as' => 'layouts.product',

@@ -17,12 +17,18 @@ class HomepageController extends Controller
     }
     public function product(){
         $categoriesFull = Category::where('parent_id', 0)->get();
-        return view('end-users.product', compact('categoriesFull'));
+        $productsfull = Product::latest()->paginate(4);
+        return view('end-users.product', compact('categoriesFull', 'productsfull' ));
     }
     public function introduce(){
         return view('end-users.introduce');
     }
     public function contact() {
         return view('end-users.contact');
+    }
+    public function categoryProduct($slug, $categoryId){
+        $categoriesFull = Category::where('parent_id', 0)->get();
+        $productsfilter = Product::where('category_id', $categoryId)->paginate(4);
+        return view('end-users.category.productlist', compact('categoriesFull', 'productsfilter'));
     }
 }

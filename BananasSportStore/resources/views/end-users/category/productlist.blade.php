@@ -61,9 +61,9 @@
     </nav>
     <!-- end sidebar -->
     <!-- content products -->
-    <div class="container">
+    <div class="container-fluid">
         <div class="row">
-            @foreach($productsfull as $product )
+            @foreach($productsfilter as $product )
             <div class="col-sm-6 col-md-4 col-lg-3 py-3 ">
                 <div class="product" style="background-color: #E8EBF4; border-radius: 30px;">
                     <a href="#" class="img-prod"><img class="img-fluid mx-auto p-3 d-block"  src="{{ $product->feature_image_path }}" alt="Colorlib Template">
@@ -80,7 +80,7 @@
             <!-- end products -->
             <!-- pagination -->
             <div class="pagination align-items-center pt-4 pb-4 justify-content-center">
-                {{ $productsfull->links() }}
+                {{ $productsfilter->links() }}
             </div>
             <!-- end pagination -->
         </div>

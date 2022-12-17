@@ -54,33 +54,14 @@
 .pagination a.active {
     background-color: #6D87E3;
     color: white;
-    border-radius: 10px;
-    text-decoration: none;
 }
 
 .pagination a:hover:not(.active) {
     background-color: #ddd;
     text-decoration: none;
-    border-radius: 10px;
 }
-  
-.pagination{
-    padding: 30px 0;
-}
-  
-.pagination ul{
-    list-style-type: none;
-}
-  
 .pagination a{
-    display: inline-block;
-    text-decoration: none;
     color: #415EC6;
-    text-align: center;
-    border-radius: 10px;
-    width: 40px;
-    height: 40px;
-    line-height: 40px;
 }
 
  
