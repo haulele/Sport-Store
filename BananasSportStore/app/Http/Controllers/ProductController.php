@@ -53,6 +53,7 @@ class ProductController extends Controller
             DB::beginTransaction();
             $dataProductCreate = [
                 'name' => $request->name,
+                'number_product' => $request->number_product,
                 'price' => $request->price,
                 'content' =>$request->content,
                 'user_id' => auth() ->id(),
@@ -97,6 +98,7 @@ class ProductController extends Controller
             DB::beginTransaction();
             $dataProductUpdate = [
                 'name' => $request->name,
+                'number_product' => $request->number_product,
                 'price' => $request->price,
                 'content' =>$request->content,
                 'user_id' => auth() ->id(),

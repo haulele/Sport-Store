@@ -39,7 +39,7 @@
                         <div class="media">
                             <div class=" d-flex mb-4">
                                 <img class="contact-img" width="50" src="{{ url('img/Smartphone.png') }}">
-                                <h5>HOTLINE: 1900167887</h5>
+                                <h5> HOTLINE: {{ getConfigvaluefromSettingtable('Phone') }} </h5>
                             </div>
                         </div>
                     </div>      
@@ -47,30 +47,30 @@
                         <div class="media">
                             <div class=" d-flex mb-4">
                                 <img class="contact-img" width="50" src="{{ url('img/MailAccount.png') }}">
-                                <h5>banasports@gmail.com</h5>
+                                <h5>{{ getConfigvaluefromSettingtable('Email') }}</h5>
                             </div>
                         </div>
                     </div> 
                     <div class="row">
                         <div class="col-sm-2 d-flex col-3 pl-4">
-                            <div class="media">
+                            <a href="{{ getConfigvaluefromSettingtable('Facebook link') }}" class="media">
                                 <img class="contact-media-img" width="50" src="{{ url('img/Facebook.png') }}">
-                            </div>   
+                            </a>   
                         </div>   
                         <div class="col-sm-2 d-flex col-3 pl-4">
-                            <div class="media">
+                            <a href="{{ getConfigvaluefromSettingtable('Email') }}" class="media">
                                 <img class="contact-media-img" width="50" src="{{ url('img/Instagram.png') }}">
-                            </div>
+                            </a>
                         </div>
                         <div class="col-sm-2 d-flex col-3 pl-4">
-                            <div class="media">
+                            <a href="{{ getConfigvaluefromSettingtable('Email') }}" class="media">
                                 <img class="contact-media-img" width="50" src="{{ url('img/Twitter.png') }}">
-                            </div>
+                            </a>
                         </div>
                         <div class="col-sm-2 d-flex col-3 pl-4">
-                            <div class="media">
+                            <a href="{{ getConfigvaluefromSettingtable('Email') }}" class="media">
                                 <img class="contact-media-img" width="50" src="{{ url('img/Shopee.png') }}">
-                            </div>
+                            </a>
                         </div>
                     </div>     
                 </div>          

@@ -44,6 +44,15 @@
                             @enderror
                         </div>
                         <div class="form-group">
+                            <label for="inputProductsNumber" class="form-label">Số lượng sản phẩm</label>
+                            <input type="text" class="form-control @error('number_product') is-invalid @enderror" placeholder="Nhập số lượng sản phẩm"
+                            name="number_product"
+                            value="{{ old('number_product') }}">
+                            @error('number_product')
+                            <div class="alert alert-danger">{{ $message }}</div>
+                            @enderror
+                        </div>
+                        <div class="form-group">
                             <label for="inputProductsPrice" class="form-label">Giá sản phẩm</label>
                             <input type="text" class="form-control @error('price') is-invalid @enderror" placeholder="Nhập giá sản phẩm" name="price"
                             value="{{ old('price') }}">

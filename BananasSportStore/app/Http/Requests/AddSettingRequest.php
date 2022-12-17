@@ -24,7 +24,7 @@ class AddSettingRequest extends FormRequest
     public function rules()
     {
         return [
-            'config_key' => 'bail|required|unique:settings|max:255|min:10',
+            'config_key' => 'bail|required|unique:settings|max:255|min:5',
             'config_value' => 'required',
         ];
     }

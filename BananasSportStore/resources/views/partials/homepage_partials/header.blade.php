@@ -53,10 +53,3 @@
         </nav>
     </div>
 </section>
-<!-- SLIDER -->
-<section class="hero hero-fullscreen jarallax" >
-    <div class=hero-background>
-        <img src="{{ url('img/slider.png' )}}" class="img-fluid" alt="No image available">
-    </div>
-</section>
-<!-- END HEADER -->

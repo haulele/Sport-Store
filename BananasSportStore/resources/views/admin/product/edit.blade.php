@@ -29,7 +29,12 @@
                             <input type="text" class="form-control" placeholder="Nhập tên sản phẩm" name="name"
                             value="{{ $product->name }}">
                         </div>
-
+                        <div class="form-group">
+                            <label for="inputProductsNumber" class="form-label">Số lượng sản phẩm</label>
+                            <input type="text" class="form-control" placeholder="Nhập số lượng sản phẩm"
+                            name="number_product"
+                            value="{{ $product->number_product }}">
+                        </div>
                         <div class="form-group">
                             <label for="inputProductsPrice" class="form-label">Giá sản phẩm</label>
                             <input type="text" class="form-control" placeholder="Nhập giá sản phẩm" name="price"
