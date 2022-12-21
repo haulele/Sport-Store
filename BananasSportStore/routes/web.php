@@ -233,6 +233,11 @@ Route::prefix('homepage')->group(function() {
         'as' => 'layouts.product',
         'uses' => 'App\Http\Controllers\HomepageController@product'
     ]);
+    //product-detail
+    Route::get('/detail/{category_id}/{id}', [
+        'as' => 'category.productdetail',
+        'uses' => 'App\Http\Controllers\HomepageController@productDetail'
+    ]);
     //introduce-shop
     Route::get('/introduce', [
         'as' => 'layouts.introduce',
@@ -243,6 +248,9 @@ Route::prefix('homepage')->group(function() {
         'as' => 'layouts.contact',
         'uses' => 'App\Http\Controllers\HomepageController@contact'
     ]);
+    //add to cart
+    Route::get('/products/addtocart/{id}', 'App\Http\Controllers\HomepageController@addToCart')->name('addToCart');
+    Route::get('/products/showcart', 'App\Http\Controllers\HomepageController@showCart')->name('showCart');
 });
 
 

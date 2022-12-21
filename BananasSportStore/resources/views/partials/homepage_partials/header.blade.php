@@ -45,7 +45,7 @@
                 <!-- Shopping -->
                 <div class="cart text-center">
                     <button class="btn-cart">
-                        <img src=" {{ asset('font/themify-icons-font/themify-icons/SVG/cart.svg')}}" alt="Shopping Bag">
+                        <a href="{{ route('showCart') }}"><img src=" {{ asset('font/themify-icons-font/themify-icons/SVG/cart.svg')}}" alt="Shopping Bag"></a>
                         <p class="bag">Giỏ hàng</p>
                     </button>
                 </div>

@@ -66,10 +66,12 @@
             @foreach($productsfilter as $product )
             <div class="col-sm-6 col-md-4 col-lg-3 py-3 ">
                 <div class="product" style="background-color: #E8EBF4; border-radius: 30px;">
-                    <a href="#" class="img-prod"><img class="img-fluid mx-auto p-3 d-block"  src="{{ $product->feature_image_path }}" alt="Colorlib Template">
+                    <a href="{{ route('category.productdetail', ['id' => $product->id,
+                    'category_id' => $product->category_id]) }}" class="img-prod"><img class="img-fluid mx-auto p-3 d-block"  src="{{ $product->feature_image_path }}" alt="Colorlib Template">
                     </a>
                     <div class="text py-3 px-3">
-                        <h3><a href="#" class="card-name">{{ $product->name }}</a></h3>
+                        <h3><a href="{{ route('category.productdetail', ['id' => $product->id,
+                        'category_id' => $product->category_id]) }}" class="card-name">{{ $product->name }}</a></h3>
                             <div class="pricing">
                                 <p class="price"><span class="mr-2 price-dc">{{ number_format($product->price) }} VNĐ</span></p>
                             </div>
