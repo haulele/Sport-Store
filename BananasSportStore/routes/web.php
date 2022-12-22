@@ -251,6 +251,8 @@ Route::prefix('homepage')->group(function() {
     //add to cart
     Route::get('/products/addtocart/{id}', 'App\Http\Controllers\HomepageController@addToCart')->name('addToCart');
     Route::get('/products/showcart', 'App\Http\Controllers\HomepageController@showCart')->name('showCart');
+    Route::get('/products/updatecart', 'App\Http\Controllers\HomepageController@updateCart')->name('updateCart');
+    Route::get('/products/deletecart', 'App\Http\Controllers\HomepageController@deleteCart')->name('deleteCart');
 });
 
 

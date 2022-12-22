@@ -7,7 +7,7 @@ use Illuminate\Http\Request;
 use App\Models\Category;
 use App\Models\Product;
 use App\Models\ProductImage;
-
+use Illuminate\Contracts\Support\Renderable;
 class HomepageController extends Controller
 {
     public function index(){
@@ -41,6 +41,7 @@ class HomepageController extends Controller
     }
     public function addToCart($id)
     {
+        // session()->flush('cart');
         $product = Product::find($id);
         $cart = session()->get('cart');
         if (isset($cart[$id]) ){
@@ -50,7 +51,9 @@ class HomepageController extends Controller
             $cart[$id] = [
                 'name' => $product->name,
                 'price' => $product->price,
-                'number_product' => 1
+                'number_product' => 1,
+                'id' => $id,
+                'image' => $product->feature_image_path,   
             ];
         }
         session()->put('cart', $cart);
@@ -61,6 +64,34 @@ class HomepageController extends Controller
     }
 
     public function showCart() {
-        
+        // echo"<pre>";
+        // print_r(session()->get('cart'));
+        $carts = session()->get('cart');
+        return view('end-users.cart', compact('carts'));
     }
+
+    public function updateCart(Request $request) {
+        if($request->id && $request->quantity){
+            $carts = session()->get('cart');
+            $carts[$request->id]['number_product'] = $request->quantity;
+            session()->put('cart', $carts);
+            $carts = session()->get('cart');
+            $cartComponent = view('end-users.cart', compact('carts'))->render();
+            return response()->json(['cart_component' => $cartComponent, 'code' => 200], status: 200);
+        }
+    }
+
+    public function deleteCart(Request $request)
+    {
+        if($request->id){
+            $carts = session()->get('cart');
+            unset($carts[$request->id]);
+            session()->put('cart', $carts);
+            $carts = session()->get('cart');
+            dd($carts);
+            $cartComponent = view('end-users.cart', compact('carts'))->render();
+            return response()->json(['cart_component' => $cartComponent, 'code' => 200], status: 200);
+        }
+    }
+
 }

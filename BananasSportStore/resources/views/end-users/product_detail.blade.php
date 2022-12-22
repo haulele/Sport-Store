@@ -123,7 +123,7 @@ function addToCart(){
 								</div>
 							</div>
                             @endforeach
-							<a href="#" class="text-center" style="color: black;">Xem thêm></a>
+							<a href="{{ route('layouts.product') }}" class="text-center" style="color: black;">Xem thêm></a>
 						</div>
 					</div>
 				</div>

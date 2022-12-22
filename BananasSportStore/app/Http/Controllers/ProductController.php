@@ -12,7 +12,6 @@ use App\Models\ProductImage;
 use App\Traits\DeleteModelTrait;
 use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\DB;
-use Exception;
 
 class ProductController extends Controller
 {
@@ -65,7 +64,7 @@ class ProductController extends Controller
                 $dataProductCreate['feature_image_path'] = $dataUploadFeatureImage['file_path'];
             }
             $product = $this->product->create($dataProductCreate);
-            //Insert data to product_images
+              
             if($request->hasFile('image_path')){
                 foreach($request->image_path as $fileItem){
                     $dataProductImageDetail = $this->storageTraitUploadMultiple($fileItem, 'product');
@@ -78,7 +77,7 @@ class ProductController extends Controller
             DB::commit();
             return redirect()->route('product.index');
         }
-        catch (Exception $exception) {
+        catch (\Exception $exception) {
             DB::rollBack();
             Log::error('Message: ' . $exception->getMessage() . "Line :" . $exception->getLine());
         }
@@ -125,7 +124,7 @@ class ProductController extends Controller
             DB::commit();
             return redirect()->route('product.index');
         }
-        catch (Exception $exception) {
+        catch (\Exception $exception) {
             DB::rollBack();
             Log::error('Message: ' . $exception->getMessage() . "Line :" . $exception->getLine());
         }
