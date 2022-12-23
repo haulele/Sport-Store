@@ -15,8 +15,9 @@ use Illuminate\Support\Facades\Route;
 Route::group(['prefix' => 'laravel-filemanager', 'middleware'], function () {
     \UniSharp\LaravelFilemanager\Lfm::routes();
 });
-Route::get('/admin', 'App\Http\Controllers\AdminController@loginAdmin');
+Route::get('/admin', 'App\Http\Controllers\AdminController@loginAdmin')->name('loginAdmin');
 Route::post('/admin', 'App\Http\Controllers\AdminController@postloginAdmin');
+Route::get('/admin/signup', 'App\Http\Controllers\AdminController@signupAdmin')->name('signupAdmin');
 // Trang chủ admin
 Route::get('/home', function () {
     return view('home');
@@ -253,6 +254,16 @@ Route::prefix('homepage')->group(function() {
     Route::get('/products/showcart', 'App\Http\Controllers\HomepageController@showCart')->name('showCart');
     Route::get('/products/updatecart', 'App\Http\Controllers\HomepageController@updateCart')->name('updateCart');
     Route::get('/products/deletecart', 'App\Http\Controllers\HomepageController@deleteCart')->name('deleteCart');
+    //payment
+    Route::get('/payment', [
+        'as' => 'layouts.payment',
+        'uses' => 'App\Http\Controllers\HomepageController@payment'
+    ]);
+    //search
+    Route::get('/search', [
+        'as' => 'layouts.search',
+        'uses' => 'App\Http\Controllers\HomepageController@search'
+    ]);
 });
 
 

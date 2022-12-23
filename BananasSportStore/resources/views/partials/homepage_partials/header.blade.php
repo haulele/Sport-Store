@@ -6,8 +6,8 @@
             <div class="Info-signup-signin row pt-3">
                 <p class="header-email d-none d-sm-block col-md-3 text-center text-white">chuoilacuit@gmail.com</p>
                 <p class="header-hotline d-none d-sm-block text-white col-md-4">Hotline:<span style="color: #FFFF00; padding-left: 17px;">0969 432 235</span></p>
-                <a class="sign-in text-end col-5 col-md-3 text-white pb-3" href="#" style="text-decoration: none;">Đăng ký</a>
-                <a class="logn-in text-center col-5 col-md-2 text-white" href="#" style="text-decoration: none;">Đăng nhập</a>
+                <a class="sign-in text-end col-5 col-md-3 text-white pb-3" href="{{ route('signupAdmin') }}" style="text-decoration: none;">Đăng ký</a>
+                <a class="logn-in text-center col-5 col-md-2 text-white" href="{{ route('loginAdmin') }}" style="text-decoration: none;">Đăng nhập</a>
             </div>
         </div>
     </div>
@@ -35,12 +35,12 @@
                     </ul>
                     <div class="navbar-spacer"></div>
                     <!-- Search -->
-                    <div class="input-group rounded me-auto ms-auto" style="width: auto">
-                        <input type="search" class="form-control" placeholder="Tìm kiếm..." aria-label="Search" aria-describedby="search-addon" style="background-color: #D9D9D9; font-style:italic;"/>
-                        <span class="input-group-text border-0" id="search-addon">
+                    <form class="input-group rounded me-auto ms-auto" action="{{ route('layouts.search') }}" method="GET" style="width: auto">
+                        <input type="search" name="query" id="query" value="{{ request()->input('query') }}" class="form-control" placeholder="Tìm kiếm..." aria-label="Search" aria-describedby="search-addon" style="background-color: #D9D9D9; font-style:italic;"/>
+                        <a  class="input-group-text border-0 text-decoration-none" id="search-addon">
                             <i class="ti-search"></i>
-                        </span>
-                    </div>
+                        </a>
+                    </form>
                 </div>
                 <!-- Shopping -->
                 <div class="cart text-center">

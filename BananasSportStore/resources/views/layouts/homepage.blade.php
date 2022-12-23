@@ -16,6 +16,7 @@
     </head>
 
     <body>
+        <div class="wrapper">
         <!-- Header -->
         @include('partials.homepage_partials.header')
         <!-- End_Header -->
@@ -27,5 +28,6 @@
         @include('partials.homepage_partials.footer')
         <!-- Footer END -->
         @yield('js')
+        </div>
     </body>
 </html>

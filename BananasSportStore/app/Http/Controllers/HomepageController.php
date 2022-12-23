@@ -21,6 +21,16 @@ class HomepageController extends Controller
         $productsfull = Product::latest()->paginate(4);
         return view('end-users.product', compact('categoriesFull', 'productsfull' ));
     }
+
+    public function search(Request $request)
+    {
+        $query = $request->input('query');
+        $products = Product::where('name', 'like', "%$query%")->paginate(4);
+        
+        $categoriesFull = Category::where('parent_id', 0)->get();
+        return view('end-users.search-result', compact('categoriesFull', 'products' ));
+    }
+
     public function introduce(){
         return view('end-users.introduce');
     }
@@ -88,10 +98,14 @@ class HomepageController extends Controller
             unset($carts[$request->id]);
             session()->put('cart', $carts);
             $carts = session()->get('cart');
-            dd($carts);
             $cartComponent = view('end-users.cart', compact('carts'))->render();
             return response()->json(['cart_component' => $cartComponent, 'code' => 200], status: 200);
         }
     }
+    public function payment()
+    {
+        return view('end-users.payment');
+    }
 
+    
 }

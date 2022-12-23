@@ -22,7 +22,7 @@
             data: {id: id, quantity: quantity},
             success: function(data) {
                 if(data.code === 200){
-                    $('body').html(data.cart_component);
+                    $('.wrapper').html(data.cart_component);
                 }
             },
             error: function(){
@@ -41,7 +41,7 @@
             data: {id: id},
             success: function(data) {
                 if(data.code === 200){
-                    $('body').html(data.cart_component);
+                    $('.wrapper').html(data.cart_component);
                     alert('Xóa thành công');
                 }
             },
@@ -152,7 +152,7 @@
             <div class="row">
                 <div class="d-grid gap-2 mb-3 d-md-flex justify-content-md-end">
                 <a href="{{ route('layouts.product') }}" class="btn me-md-2 fs-5 fw-bold px-5 py-2" type="button" style="border: 1px solid #6D87E3; color: #6D87E3;">Mua thêm</a>
-                <a class="btn fs-5 fw-bold px-5 py-2" type="button" style="background-color: #6D87E3; color: white;">Thanh toán</a>
+                <a href="{{ route('layouts.payment') }}" class="btn fs-5 fw-bold px-5 py-2" type="button" style="background-color: #6D87E3; color: white;">Thanh toán</a>
             </div>
             </div>
         </div>

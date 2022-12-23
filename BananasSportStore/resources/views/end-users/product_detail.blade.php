@@ -80,7 +80,7 @@ function addToCart(){
 											<span class="bi bi-dash-lg"></span>
 										</button>
 									</span>
-									<input type="text" id="quantity" name="quantity" class="form-control input-number text-center " style="border: none; " value="1" min="1" max="100">
+									<input type="text" id="quantity" name="quantity" class="form-control input-number text-center" style="border: none; " value="1" min="1" max="100">
 									<span class="input-group-btn">
 										<button type="button" class="quantity-right-plus btn btn-number rounded-3" onclick="plus('quantity')" style="right: -11px;" data-type="plus" data-field="quantity">
 											<span class="bi bi-plus-lg"></span>
@@ -90,7 +90,7 @@ function addToCart(){
 							</div>
 						</div>
 						<div class="action pt-2 pb-5">
-							<a class="add_to_cart btn btn-act btn-outline-act"
+							<a class="add_to_cart btn btn-act btn-outline-act me-3"
 							data-url="{{ route('addToCart', ['id' => $productdetail[0]->id]) }}" 
 							href="#">Thêm vào giỏ</a>
 							<button class="buy btn btn-act btn-outline-act " type="button">Mua ngay</button>

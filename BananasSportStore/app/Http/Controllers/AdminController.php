@@ -8,9 +8,9 @@ class AdminController extends Controller
 {
     public function loginAdmin()
     {
-        if(auth()->check()){
-            return redirect()->to(path:'home');
-        }
+        // if(auth()->check()){
+        //     return redirect()->to(path:'home');
+        // }
         return view('login_in');
     }
     public function postloginAdmin(Request $request) 
@@ -21,7 +21,11 @@ class AdminController extends Controller
             'email' => $request->email,
             'password' => $request->password,
         ], $remember)){
-            return redirect()-> to('home'); 
+            return redirect()-> to('end-users.homepage'); 
         }
+    }
+
+    public function signupAdmin(){
+        return view('sign_in');
     }
 }
